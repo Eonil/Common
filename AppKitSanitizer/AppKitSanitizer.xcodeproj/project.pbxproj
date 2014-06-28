@@ -31,7 +31,7 @@
 		450AC2A71949B0A1005B7904 /* BasicColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2951949B0A1005B7904 /* BasicColor.m */; };
 		450AC2A81949B0A1005B7904 /* BasicViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2961949B0A1005B7904 /* BasicViewController.h */; };
 		450AC2A91949B0A1005B7904 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2971949B0A1005B7904 /* BasicViewController.m */; };
-		459D8FA0194D5D6100643BAE /* FoundationExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D8F9B194D5D2100643BAE /* FoundationExtras.framework */; };
+		4512406C195E9BE700B6198A /* FoundationExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512401D195E9B9600B6198A /* FoundationExtras.framework */; };
 		45E7A0C01949CB9300A463CF /* BasicTriplePaneSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0BE1949CB9300A463CF /* BasicTriplePaneSplitViewController.h */; };
 		45E7A0C11949CB9300A463CF /* BasicTriplePaneSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0BF1949CB9300A463CF /* BasicTriplePaneSplitViewController.m */; };
 		45E7A0C91949CBFF00A463CF /* UniverseLayoutFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0C71949CBFF00A463CF /* UniverseLayoutFactory.h */; };
@@ -52,26 +52,33 @@
 			remoteGlobalIDString = 450AC2531949AB1B005B7904;
 			remoteInfo = AppKitSanitizer;
 		};
-		459D8F9A194D5D2100643BAE /* PBXContainerItemProxy */ = {
+		4512401C195E9B9600B6198A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 450AC2541949AB1B005B7904;
-			remoteInfo = FoundationExtras;
+			remoteGlobalIDString = 45A03CB11951C17C00DE2307;
+			remoteInfo = "FoundationExtras - OSX";
 		};
-		459D8F9C194D5D2100643BAE /* PBXContainerItemProxy */ = {
+		4512401E195E9B9600B6198A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 450AC26B1949AB1B005B7904;
-			remoteInfo = FoundationExtrasTests;
+			remoteGlobalIDString = 45A03CC11951C17D00DE2307;
+			remoteInfo = "FoundationExtrasTests - OSX";
 		};
-		459D8F9E194D5D5D00643BAE /* PBXContainerItemProxy */ = {
+		45124020195E9B9600B6198A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45F25E2B1951C21A00215432;
+			remoteInfo = "FoundationExtras - iOS - StaticLibrary";
+		};
+		4512406D195E9BEF00B6198A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 450AC2531949AB1B005B7904;
-			remoteInfo = FoundationExtras;
+			remoteGlobalIDString = 45A03CB01951C17C00DE2307;
+			remoteInfo = "FoundationExtras - OSX";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -125,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459D8FA0194D5D6100643BAE /* FoundationExtras.framework in Frameworks */,
+				4512406C195E9BE700B6198A /* FoundationExtras.framework in Frameworks */,
 				450AC2581949AB1B005B7904 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,8 +250,9 @@
 		459D8F96194D5D2000643BAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				459D8F9B194D5D2100643BAE /* FoundationExtras.framework */,
-				459D8F9D194D5D2100643BAE /* FoundationExtrasTests.xctest */,
+				4512401D195E9B9600B6198A /* FoundationExtras.framework */,
+				4512401F195E9B9600B6198A /* FoundationExtrasTests - OSX.xctest */,
+				45124021195E9B9600B6198A /* libFoundationExtras - iOS - StaticLibrary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,7 +310,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				459D8F9F194D5D5D00643BAE /* PBXTargetDependency */,
+				4512406E195E9BEF00B6198A /* PBXTargetDependency */,
 			);
 			name = AppKitSanitizer;
 			productName = AppKitSanitizer;
@@ -367,18 +375,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		459D8F9B194D5D2100643BAE /* FoundationExtras.framework */ = {
+		4512401D195E9B9600B6198A /* FoundationExtras.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = FoundationExtras.framework;
-			remoteRef = 459D8F9A194D5D2100643BAE /* PBXContainerItemProxy */;
+			remoteRef = 4512401C195E9B9600B6198A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		459D8F9D194D5D2100643BAE /* FoundationExtrasTests.xctest */ = {
+		4512401F195E9B9600B6198A /* FoundationExtrasTests - OSX.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = FoundationExtrasTests.xctest;
-			remoteRef = 459D8F9C194D5D2100643BAE /* PBXContainerItemProxy */;
+			path = "FoundationExtrasTests - OSX.xctest";
+			remoteRef = 4512401E195E9B9600B6198A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45124021195E9B9600B6198A /* libFoundationExtras - iOS - StaticLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFoundationExtras - iOS - StaticLibrary.a";
+			remoteRef = 45124020195E9B9600B6198A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -440,10 +455,10 @@
 			target = 450AC2531949AB1B005B7904 /* AppKitSanitizer */;
 			targetProxy = 450AC26F1949AB1B005B7904 /* PBXContainerItemProxy */;
 		};
-		459D8F9F194D5D5D00643BAE /* PBXTargetDependency */ = {
+		4512406E195E9BEF00B6198A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FoundationExtras;
-			targetProxy = 459D8F9E194D5D5D00643BAE /* PBXContainerItemProxy */;
+			name = "FoundationExtras - OSX";
+			targetProxy = 4512406D195E9BEF00B6198A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
