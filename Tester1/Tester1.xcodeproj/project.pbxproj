@@ -394,11 +394,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Common-dnnqetmiddtmachdnrsjhqnjlcjz/Build/Products/Debug",
-					/Users/Eonil/Workshop/Development/Common/FoundationExtras/build/Debug,
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tester1/Tester1-Prefix.pch";
 				INFOPLIST_FILE = "Tester1/Tester1-Info.plist";
@@ -412,11 +407,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Common-dnnqetmiddtmachdnrsjhqnjlcjz/Build/Products/Debug",
-					/Users/Eonil/Workshop/Development/Common/FoundationExtras/build/Debug,
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tester1/Tester1-Prefix.pch";
 				INFOPLIST_FILE = "Tester1/Tester1-Info.plist";
@@ -484,6 +474,7 @@
 				451240AB195E9C0E00B6198A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		451240AC195E9C0E00B6198A /* Build configuration list for PBXNativeTarget "Tester1Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +483,7 @@
 				451240AE195E9C0E00B6198A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
