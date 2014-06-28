@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CommonStuffsForC++/CommonStuffsForC++.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:FoundationExtras/FoundationExtras.xcodeproj">
    </FileRef>
    <FileRef
