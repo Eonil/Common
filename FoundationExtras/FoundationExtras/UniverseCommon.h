@@ -24,17 +24,33 @@ extern "C"
 	
 	
 	
-
-
-
-
-
-
-#if EONIL_DEBUG_MODE
-static BOOL const	USE_DEBUGGING_ASSERTIONS	=	YES;
-#else
-static BOOL const	USE_DEBUGGING_ASSERTIONS	=	NO;
+	
+/*!
+ Uses Clang/Xcode default debugging flag.
+ */
+#ifndef	EONIL_DEBUG_MODE
+#ifdef	DEBUG
+#if		DEBUG
+#define EONIL_DEBUG_MODE		1
 #endif
+#endif
+#endif
+	
+/*!
+ Treat relese mode if nothing specified 
+ after all the checks.
+ */
+#ifndef	EONIL_DEBUG_MODE
+#define EONIL_DEBUG_MODE		0
+#endif
+
+	
+	
+	
+
+
+
+
 
 #define UNIVERSE_UNAVAILABLE_METHOD							__attribute__((unavailable))
 #define UNIVERSE_DEPRECATED_METHOD							__attribute__((deprecated))
@@ -51,6 +67,8 @@ void	UNIVERSE_DEBUG_ASSERT(BOOL cond);
 void	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(BOOL cond, NSString* message);
 #define	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(obj,type)			UNIVERSE_DEBUG_ASSERT([obj isKindOfClass:[type class]])
 #define	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL(obj,type)	UNIVERSE_DEBUG_ASSERT([obj isKindOfClass:[type class]] || obj == nil)
+void	UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_IN_ARRAY(NSArray* elements, BOOL(^test)(id element));
+#define	UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_TYPE_IN_ARRAY(arr,type)	UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_IN_ARRAY((arr), (^(id e){ [e isKindOfClass:[type class]] }));
 void	UNIVERSE_UNREACHABLE_CODE() UNIVERSE_NON_RETURNING_METHOD;
 #else
 #define	_universe_error_log(message)
@@ -58,6 +76,7 @@ void	UNIVERSE_UNREACHABLE_CODE() UNIVERSE_NON_RETURNING_METHOD;
 #define	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(cond,message)
 #define	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(obj,type)
 #define	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL(obj,type)
+#define	UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_IN_ARRAY(elements,block);
 #define	UNIVERSE_UNREACHABLE_CODE()							__builtin_unreachable()
 #endif
 

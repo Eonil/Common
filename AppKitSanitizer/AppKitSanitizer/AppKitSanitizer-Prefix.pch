@@ -5,5 +5,16 @@
 //
 
 #ifdef __OBJC__
+
+
 #import <Cocoa/Cocoa.h>
+#import <FoundationExtras/FoundationExtras.h>
+#if EONIL_DEBUG_MODE
+#define EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS	1
+#else
+#define EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS	0
 #endif
+
+
+#endif
+

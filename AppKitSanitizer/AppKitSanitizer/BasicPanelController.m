@@ -15,7 +15,7 @@
 @implementation BasicPanelController
 - (id)initWithWindow:(BasicPanel *)window
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicPanel);
 	}
@@ -30,7 +30,7 @@
 }
 - (void)setWindow:(BasicPanel *)window
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{		
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicPanel);
 	}

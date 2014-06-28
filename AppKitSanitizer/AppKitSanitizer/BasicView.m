@@ -35,7 +35,7 @@
 }
 - (void)addConstraints:(NSArray *)constraints
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(constraints, NSArray);
 		for (id a in constraints)

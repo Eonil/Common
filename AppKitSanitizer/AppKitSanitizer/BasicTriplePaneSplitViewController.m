@@ -37,7 +37,7 @@ round_cgfloat(CGFloat const f1)
 @dynamic	value;
 - (CGFloat)origin
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_verticalitySourceSplitView, NSSplitView);
 	}
@@ -50,7 +50,7 @@ round_cgfloat(CGFloat const f1)
 }
 - (void)setOrigin:(CGFloat)origin
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_verticalitySourceSplitView, NSSplitView);
 	}
@@ -64,7 +64,7 @@ round_cgfloat(CGFloat const f1)
 }
 - (CGFloat)size
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_verticalitySourceSplitView, NSSplitView);
 	}
@@ -77,7 +77,7 @@ round_cgfloat(CGFloat const f1)
 }
 - (void)setSize:(CGFloat)size
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_verticalitySourceSplitView, NSSplitView);
 	}
@@ -91,7 +91,7 @@ round_cgfloat(CGFloat const f1)
 }
 - (CGFloat)theOtherOrigin
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_verticalitySourceSplitView, NSSplitView);
 	}
@@ -104,7 +104,7 @@ round_cgfloat(CGFloat const f1)
 }
 - (void)setTheOtherOrigin:(CGFloat)theOtherOrigin
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_verticalitySourceSplitView, NSSplitView);
 	}
@@ -118,7 +118,7 @@ round_cgfloat(CGFloat const f1)
 }
 - (CGFloat)theOtherSize
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_verticalitySourceSplitView, NSSplitView);
 	}
@@ -131,7 +131,7 @@ round_cgfloat(CGFloat const f1)
 }
 - (void)setTheOtherSize:(CGFloat)theOtherSize
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_verticalitySourceSplitView, NSSplitView);
 	}
@@ -224,7 +224,7 @@ cgfloat_min(CGFloat const a, CGFloat const b)
 }
 - (void)setPaneContentViewController:(BasicViewController *)new_content_vc
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		if (new_content_vc != nil)
 		{
@@ -445,7 +445,7 @@ cgfloat_min(CGFloat const a, CGFloat const b)
 @implementation BasicTriplePaneSplitViewController (BasicDocumentEditorSplitControlling)
 - (CGFloat)splitView:(NSSplitView *)splitView constrainMinCoordinate:(CGFloat)proposedMinimumPosition ofSubviewAt:(NSInteger)dividerIndex
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT(splitView == _split_v);
 	}
@@ -462,7 +462,7 @@ cgfloat_min(CGFloat const a, CGFloat const b)
 }
 - (CGFloat)splitView:(NSSplitView *)splitView constrainMaxCoordinate:(CGFloat)proposedMaximumPosition ofSubviewAt:(NSInteger)dividerIndex
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT(splitView == _split_v);
 	}
@@ -482,7 +482,7 @@ cgfloat_min(CGFloat const a, CGFloat const b)
 //}
 - (BOOL)splitView:(NSSplitView *)splitView canCollapseSubview:(NSView *)subview
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT(splitView == _split_v);
 	}
@@ -493,7 +493,7 @@ cgfloat_min(CGFloat const a, CGFloat const b)
 }
 - (BOOL)splitView:(NSSplitView *)splitView shouldCollapseSubview:(NSView *)subview forDoubleClickOnDividerAtIndex:(NSInteger)dividerIndex
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT(splitView == _split_v);
 	}
@@ -507,7 +507,7 @@ cgfloat_min(CGFloat const a, CGFloat const b)
 //}
 - (void)splitView:(NSSplitView *)splitView resizeSubviewsWithOldSize:(NSSize)oldSize
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT(splitView == _split_v);
 	}

@@ -27,7 +27,7 @@
 }
 + (NSTableColumn *)tableColumnWithIdentifier:(NSString*)identifier title:(NSString *)title
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(identifier, NSString);
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(title, NSString);
@@ -48,7 +48,7 @@
 }
 + (NSToolbarItem *)toolbarItemWithIdentifier:(NSString *)identifier label:(NSString *)label target:(id)target action:(SEL)action
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(identifier, NSString);
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(label, NSString);

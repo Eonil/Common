@@ -18,7 +18,7 @@
 @implementation UniverseLayoutFactory
 + (NSArray *)layoutSubview:(NSView *)subview toFillSuperview:(NSView *)superview
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(subview, NSView);
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(superview, NSView);
@@ -42,7 +42,7 @@
 }
 + (NSArray *)layoutSubview:(NSView *)subview toFillSuperview:(NSView *)superview withTopDisplacement:(CGFloat)topDisplacement bottomDisplacement:(CGFloat)bottomDisplacement
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(subview, NSView);
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(superview, NSView);

@@ -28,7 +28,7 @@
 }
 - (BasicView *)contentView
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		if (_do_content_view_type_check)
 		{
@@ -42,7 +42,7 @@
 }
 - (void)setContentView:(BasicView *)aView
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		if (_do_content_view_type_check)
 		{

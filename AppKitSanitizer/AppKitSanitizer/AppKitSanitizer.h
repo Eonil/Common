@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <FoundationExtras/FoundationExtras.h>
 
 #import "BasicDocument.h"

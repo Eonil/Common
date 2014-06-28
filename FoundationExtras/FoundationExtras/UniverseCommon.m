@@ -32,6 +32,18 @@ UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(BOOL cond, NSString* message)
 }
 
 void
+UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_IN_ARRAY(NSArray* elements, BOOL(^test)(id element))
+{
+	for (id e in elements)
+	{
+		if (test(e) == NO)
+		{
+			[UniverseDoctor panicWithMessage:@"Debug mode assertion failure."];
+		}
+	}
+}
+
+void
 UNIVERSE_UNREACHABLE_CODE()
 {
 	[UniverseDoctor panicWithMessage:@"Unreacable code! (asserted for debugging)"];

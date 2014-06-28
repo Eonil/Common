@@ -11,7 +11,7 @@
 @implementation BasicWindow
 - (BasicView *)contentView
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(self, BasicWindow);
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super contentView], NSView);

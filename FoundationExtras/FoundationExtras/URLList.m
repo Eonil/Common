@@ -23,7 +23,7 @@
 }
 + (instancetype)instantiationWithURLs:(NSArray *)urls
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(urls, NSArray);
 		for (id u1 in urls)
@@ -42,7 +42,7 @@
 }
 - (NSURL *)urlAtIndex:(NSUInteger)index
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT(index != NSNotFound);
 	}
@@ -53,7 +53,7 @@
 }
 - (NSURL *)firstURL
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT(_arr.count > 0);
 	}
@@ -64,7 +64,7 @@
 }
 - (NSURL *)lastURL
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT(_arr.count > 0);
 	}
@@ -79,7 +79,7 @@
 }
 - (id)____initWithURLs:(NSArray*)urls
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(urls, NSArray);
 		for (id url in urls)
@@ -108,7 +108,7 @@
 }
 - (URLList *)listByAddingURL:(NSURL *)url
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(url, NSURL);
 	}
@@ -120,7 +120,7 @@
 }
 - (instancetype)listByAddingURLs:(NSArray *)urls
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(urls, NSArray);
 		for (id url in urls)
@@ -136,7 +136,7 @@
 }
 - (URLList *)listByInsertingURL:(NSURL *)url atIndex:(NSUInteger)index
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT(index != NSNotFound);
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(url, NSURL);
@@ -152,7 +152,7 @@
 }
 - (URLList *)listByRemovingURLAtIndex:(NSUInteger)index
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 	}
 	
@@ -165,7 +165,7 @@
 }
 - (URLList *)listByRemovingURLsAtIndexes:(NSIndexSet *)indexes
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(indexes, NSIndexSet);
 	}
@@ -198,7 +198,7 @@
 @implementation FileURLList
 + (instancetype)instantiationWithURL:(NSURL *)url
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT([url isFileURL]);
 	}
@@ -209,7 +209,8 @@
 }
 + (instancetype)instantiationWithURLs:(NSArray *)urls
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+//	UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_IN_ARRAY(urls, ^(id e){ return [e isFileURL]; });
+	if (EONIL_DEBUG_MODE)
 	{
 		for (NSURL* url in urls)
 		{
@@ -223,7 +224,7 @@
 }
 - (instancetype)listByAddingURL:(NSURL *)url
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT([url isFileURL]);
 	}
@@ -234,7 +235,7 @@
 }
 - (instancetype)listByAddingURLs:(NSArray *)urls
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(urls, NSArray);
 		for (NSURL* url in urls)
@@ -249,7 +250,7 @@
 }
 - (instancetype)listByInsertingURL:(NSURL *)url atIndex:(NSUInteger)index
 {
-	if (USE_DEBUGGING_ASSERTIONS)
+	if (EONIL_DEBUG_MODE)
 	{
 		UNIVERSE_DEBUG_ASSERT([url isFileURL]);
 	}

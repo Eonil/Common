@@ -15,32 +15,33 @@
 		450AC2711949AB1B005B7904 /* AppKitSanitizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450AC2541949AB1B005B7904 /* AppKitSanitizer.framework */; };
 		450AC2771949AB1B005B7904 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 450AC2751949AB1B005B7904 /* InfoPlist.strings */; };
 		450AC2791949AB1B005B7904 /* AppKitSanitizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2781949AB1B005B7904 /* AppKitSanitizerTests.m */; };
-		450AC29A1949B0A1005B7904 /* BasicDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2881949B0A1005B7904 /* BasicDocument.h */; };
+		450AC29A1949B0A1005B7904 /* BasicDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2881949B0A1005B7904 /* BasicDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450AC29B1949B0A1005B7904 /* BasicDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2891949B0A1005B7904 /* BasicDocument.m */; };
-		450AC29C1949B0A1005B7904 /* BasicWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC28A1949B0A1005B7904 /* BasicWindow.h */; };
+		450AC29C1949B0A1005B7904 /* BasicWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC28A1949B0A1005B7904 /* BasicWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450AC29D1949B0A1005B7904 /* BasicWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC28B1949B0A1005B7904 /* BasicWindow.m */; };
-		450AC29E1949B0A1005B7904 /* BasicWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC28C1949B0A1005B7904 /* BasicWindowController.h */; };
+		450AC29E1949B0A1005B7904 /* BasicWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC28C1949B0A1005B7904 /* BasicWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450AC29F1949B0A1005B7904 /* BasicWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC28D1949B0A1005B7904 /* BasicWindowController.m */; };
-		450AC2A01949B0A1005B7904 /* BasicPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC28E1949B0A1005B7904 /* BasicPanel.h */; };
+		450AC2A01949B0A1005B7904 /* BasicPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC28E1949B0A1005B7904 /* BasicPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450AC2A11949B0A1005B7904 /* BasicPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC28F1949B0A1005B7904 /* BasicPanel.m */; };
-		450AC2A21949B0A1005B7904 /* BasicPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2901949B0A1005B7904 /* BasicPanelController.h */; };
+		450AC2A21949B0A1005B7904 /* BasicPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2901949B0A1005B7904 /* BasicPanelController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450AC2A31949B0A1005B7904 /* BasicPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2911949B0A1005B7904 /* BasicPanelController.m */; };
-		450AC2A41949B0A1005B7904 /* BasicView.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2921949B0A1005B7904 /* BasicView.h */; };
+		450AC2A41949B0A1005B7904 /* BasicView.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2921949B0A1005B7904 /* BasicView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450AC2A51949B0A1005B7904 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2931949B0A1005B7904 /* BasicView.m */; };
-		450AC2A61949B0A1005B7904 /* BasicColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2941949B0A1005B7904 /* BasicColor.h */; };
+		450AC2A61949B0A1005B7904 /* BasicColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2941949B0A1005B7904 /* BasicColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450AC2A71949B0A1005B7904 /* BasicColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2951949B0A1005B7904 /* BasicColor.m */; };
-		450AC2A81949B0A1005B7904 /* BasicViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2961949B0A1005B7904 /* BasicViewController.h */; };
+		450AC2A81949B0A1005B7904 /* BasicViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2961949B0A1005B7904 /* BasicViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450AC2A91949B0A1005B7904 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2971949B0A1005B7904 /* BasicViewController.m */; };
-		4512406C195E9BE700B6198A /* FoundationExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512401D195E9B9600B6198A /* FoundationExtras.framework */; };
-		45E7A0C01949CB9300A463CF /* BasicTriplePaneSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0BE1949CB9300A463CF /* BasicTriplePaneSplitViewController.h */; };
+		4512418C195EA01000B6198A /* FoundationExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45124189195EA00C00B6198A /* FoundationExtras.framework */; };
+		45124196195EA13600B6198A /* AppKitSanitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2641949AB1B005B7904 /* AppKitSanitizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45E7A0C01949CB9300A463CF /* BasicTriplePaneSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0BE1949CB9300A463CF /* BasicTriplePaneSplitViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E7A0C11949CB9300A463CF /* BasicTriplePaneSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0BF1949CB9300A463CF /* BasicTriplePaneSplitViewController.m */; };
-		45E7A0C91949CBFF00A463CF /* UniverseLayoutFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0C71949CBFF00A463CF /* UniverseLayoutFactory.h */; };
+		45E7A0C91949CBFF00A463CF /* UniverseLayoutFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0C71949CBFF00A463CF /* UniverseLayoutFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E7A0CA1949CBFF00A463CF /* UniverseLayoutFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0C81949CBFF00A463CF /* UniverseLayoutFactory.m */; };
-		45E7A0CD1949CC3E00A463CF /* UniverseViewHierarchyQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0CB1949CC3E00A463CF /* UniverseViewHierarchyQuery.h */; };
+		45E7A0CD1949CC3E00A463CF /* UniverseViewHierarchyQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0CB1949CC3E00A463CF /* UniverseViewHierarchyQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E7A0CE1949CC3E00A463CF /* UniverseViewHierarchyQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0CC1949CC3E00A463CF /* UniverseViewHierarchyQuery.m */; };
-		45E7A0D11949CDD800A463CF /* UniverseViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0CF1949CDD800A463CF /* UniverseViewFactory.h */; };
+		45E7A0D11949CDD800A463CF /* UniverseViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0CF1949CDD800A463CF /* UniverseViewFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E7A0D21949CDD800A463CF /* UniverseViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0D01949CDD800A463CF /* UniverseViewFactory.m */; };
-		45E7A0D51949CDE400A463CF /* UniversePseudoRandomNumberFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0D31949CDE400A463CF /* UniversePseudoRandomNumberFactory.h */; };
+		45E7A0D51949CDE400A463CF /* UniversePseudoRandomNumberFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0D31949CDE400A463CF /* UniversePseudoRandomNumberFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E7A0D61949CDE400A463CF /* UniversePseudoRandomNumberFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0D41949CDE400A463CF /* UniversePseudoRandomNumberFactory.m */; };
 /* End PBXBuildFile section */
 
@@ -52,33 +53,26 @@
 			remoteGlobalIDString = 450AC2531949AB1B005B7904;
 			remoteInfo = AppKitSanitizer;
 		};
-		4512401C195E9B9600B6198A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 45A03CB11951C17C00DE2307;
-			remoteInfo = "FoundationExtras - OSX";
-		};
-		4512401E195E9B9600B6198A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 45A03CC11951C17D00DE2307;
-			remoteInfo = "FoundationExtrasTests - OSX";
-		};
-		45124020195E9B9600B6198A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 45F25E2B1951C21A00215432;
-			remoteInfo = "FoundationExtras - iOS - StaticLibrary";
-		};
-		4512406D195E9BEF00B6198A /* PBXContainerItemProxy */ = {
+		45124184195EA00C00B6198A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 45A03CB01951C17C00DE2307;
-			remoteInfo = "FoundationExtras - OSX";
+			remoteGlobalIDString = 451240C9195E9E0400B6198A;
+			remoteInfo = FoundationExtras;
+		};
+		45124188195EA00C00B6198A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 451240CA195E9E0400B6198A;
+			remoteInfo = FoundationExtras;
+		};
+		4512418A195EA00C00B6198A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4512411B195E9F3400B6198A;
+			remoteInfo = "FoundationExtras - iOS - Static Library";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -132,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4512406C195E9BE700B6198A /* FoundationExtras.framework in Frameworks */,
+				4512418C195EA01000B6198A /* FoundationExtras.framework in Frameworks */,
 				450AC2581949AB1B005B7904 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,11 +193,11 @@
 				450AC2891949B0A1005B7904 /* BasicDocument.m */,
 				450AC28A1949B0A1005B7904 /* BasicWindow.h */,
 				450AC28B1949B0A1005B7904 /* BasicWindow.m */,
+				450AC28C1949B0A1005B7904 /* BasicWindowController.h */,
 				450AC28D1949B0A1005B7904 /* BasicWindowController.m */,
 				450AC28E1949B0A1005B7904 /* BasicPanel.h */,
 				450AC28F1949B0A1005B7904 /* BasicPanel.m */,
 				450AC2901949B0A1005B7904 /* BasicPanelController.h */,
-				450AC28C1949B0A1005B7904 /* BasicWindowController.h */,
 				450AC2911949B0A1005B7904 /* BasicPanelController.m */,
 				450AC2921949B0A1005B7904 /* BasicView.h */,
 				450AC2931949B0A1005B7904 /* BasicView.m */,
@@ -250,9 +244,8 @@
 		459D8F96194D5D2000643BAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4512401D195E9B9600B6198A /* FoundationExtras.framework */,
-				4512401F195E9B9600B6198A /* FoundationExtrasTests - OSX.xctest */,
-				45124021195E9B9600B6198A /* libFoundationExtras - iOS - StaticLibrary.a */,
+				45124189195EA00C00B6198A /* FoundationExtras.framework */,
+				4512418B195EA00C00B6198A /* libFoundationExtras - iOS - Static Library.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,6 +279,7 @@
 				450AC2A01949B0A1005B7904 /* BasicPanel.h in Headers */,
 				450AC2A21949B0A1005B7904 /* BasicPanelController.h in Headers */,
 				45E7A0CD1949CC3E00A463CF /* UniverseViewHierarchyQuery.h in Headers */,
+				45124196195EA13600B6198A /* AppKitSanitizer.h in Headers */,
 				45E7A0C01949CB9300A463CF /* BasicTriplePaneSplitViewController.h in Headers */,
 				450AC2A41949B0A1005B7904 /* BasicView.h in Headers */,
 				450AC2A81949B0A1005B7904 /* BasicViewController.h in Headers */,
@@ -310,7 +304,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4512406E195E9BEF00B6198A /* PBXTargetDependency */,
+				45124185195EA00C00B6198A /* PBXTargetDependency */,
 			);
 			name = AppKitSanitizer;
 			productName = AppKitSanitizer;
@@ -375,25 +369,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4512401D195E9B9600B6198A /* FoundationExtras.framework */ = {
+		45124189195EA00C00B6198A /* FoundationExtras.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = FoundationExtras.framework;
-			remoteRef = 4512401C195E9B9600B6198A /* PBXContainerItemProxy */;
+			remoteRef = 45124188195EA00C00B6198A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4512401F195E9B9600B6198A /* FoundationExtrasTests - OSX.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "FoundationExtrasTests - OSX.xctest";
-			remoteRef = 4512401E195E9B9600B6198A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		45124021195E9B9600B6198A /* libFoundationExtras - iOS - StaticLibrary.a */ = {
+		4512418B195EA00C00B6198A /* libFoundationExtras - iOS - Static Library.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libFoundationExtras - iOS - StaticLibrary.a";
-			remoteRef = 45124020195E9B9600B6198A /* PBXContainerItemProxy */;
+			path = "libFoundationExtras - iOS - Static Library.a";
+			remoteRef = 4512418A195EA00C00B6198A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -455,10 +442,10 @@
 			target = 450AC2531949AB1B005B7904 /* AppKitSanitizer */;
 			targetProxy = 450AC26F1949AB1B005B7904 /* PBXContainerItemProxy */;
 		};
-		4512406E195E9BEF00B6198A /* PBXTargetDependency */ = {
+		45124185195EA00C00B6198A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "FoundationExtras - OSX";
-			targetProxy = 4512406D195E9BEF00B6198A /* PBXContainerItemProxy */;
+			name = FoundationExtras;
+			targetProxy = 45124184195EA00C00B6198A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
