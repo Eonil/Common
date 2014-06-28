@@ -33,6 +33,7 @@
 		450AC2A91949B0A1005B7904 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450AC2971949B0A1005B7904 /* BasicViewController.m */; };
 		4512418C195EA01000B6198A /* FoundationExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45124189195EA00C00B6198A /* FoundationExtras.framework */; };
 		45124196195EA13600B6198A /* AppKitSanitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 450AC2641949AB1B005B7904 /* AppKitSanitizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451241C8195ECC4A00B6198A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 451241C7195ECC4A00B6198A /* README.md */; };
 		45E7A0C01949CB9300A463CF /* BasicTriplePaneSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0BE1949CB9300A463CF /* BasicTriplePaneSplitViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E7A0C11949CB9300A463CF /* BasicTriplePaneSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0BF1949CB9300A463CF /* BasicTriplePaneSplitViewController.m */; };
 		45E7A0C91949CBFF00A463CF /* UniverseLayoutFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0C71949CBFF00A463CF /* UniverseLayoutFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,6 +109,7 @@
 		450AC2951949B0A1005B7904 /* BasicColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicColor.m; sourceTree = "<group>"; };
 		450AC2961949B0A1005B7904 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
 		450AC2971949B0A1005B7904 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		451241C7195ECC4A00B6198A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationExtras.xcodeproj; path = ../FoundationExtras/FoundationExtras.xcodeproj; sourceTree = "<group>"; };
 		45E7A0BE1949CB9300A463CF /* BasicTriplePaneSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTriplePaneSplitViewController.h; sourceTree = "<group>"; };
 		45E7A0BF1949CB9300A463CF /* BasicTriplePaneSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTriplePaneSplitViewController.m; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		450AC24A1949AB1B005B7904 = {
 			isa = PBXGroup;
 			children = (
+				451241C7195ECC4A00B6198A /* README.md */,
 				459D8F95194D5D2000643BAE /* FoundationExtras.xcodeproj */,
 				450AC25D1949AB1B005B7904 /* AppKitSanitizer */,
 				450AC2721949AB1B005B7904 /* AppKitSanitizerTests */,
@@ -390,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451241C8195ECC4A00B6198A /* README.md in Resources */,
 				450AC2621949AB1B005B7904 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

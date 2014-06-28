@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
-//#import <FoundationExtras/FoundationExtras.h>
+#import <FoundationExtras/FoundationExtras.h>
+#import <AppKit/NSWindowController.h>
 #import "BasicWindow.h"
 #import "BasicDocument.h"
 
@@ -31,3 +32,9 @@
 - (BasicDocument*)document;
 - (void)setDocument:(BasicDocument *)document;
 @end
+
+
+
+
+
+

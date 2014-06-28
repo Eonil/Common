@@ -35,10 +35,7 @@
 }
 - (id)initWithWindow:(BasicWindow *)window
 {
-	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
-	{
-		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicWindow);
-	}
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicWindow);
 	
 	////
 	
@@ -46,10 +43,7 @@
 }
 - (BasicWindow *)window
 {
-	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
-	{
-		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super window], BasicWindow);
-	}
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super window], BasicWindow);
 	
 	////
 	
@@ -57,10 +51,7 @@
 }
 - (void)setWindow:(BasicWindow *)window
 {
-	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
-	{
-		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicWindow);
-	}
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicWindow);
 	
 	////
 	
@@ -68,10 +59,7 @@
 }
 - (id)document
 {
-	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
-	{
-		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super document], BasicDocument);
-	}
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super document], BasicDocument);
 	
 	////
 	
@@ -79,10 +67,7 @@
 }
 - (void)setDocument:(id)document
 {
-	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
-	{
-		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super document], BasicDocument);
-	}
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super document], BasicDocument);
 	
 	////
 	

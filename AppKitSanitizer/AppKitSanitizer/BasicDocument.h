@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
-#import <FoundationExtras/FoundationExtras.h>
+#import <AppKit/NSDocument.h>
 
 @interface BasicDocument : NSDocument
 + (id)allocWithZone:(struct _NSZone *)zone UNIVERSE_UNAVAILABLE_METHOD;
