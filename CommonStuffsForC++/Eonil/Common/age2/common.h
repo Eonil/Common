@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
-#define	EONIL_COMMONUTILITY_AGE2_NAMESPACE_BEGIN				namespace Eonil { namespace Common {  namespace age2 {
+#define	EONIL_COMMONUTILITY_AGE2_NAMESPACE_BEGIN				namespace Eonil { namespace Common {  inline namespace age2 {
 #define	EONIL_COMMONUTILITY_AGE2_NAMESPACE_END					} } }
 
 
@@ -29,7 +29,8 @@ EONIL_COMMONUTILITY_AGE2_NAMESPACE_BEGIN
 	
 
 
-template <typename T>	using	ptr		=	T*;
+//template <typename T>	using	ptr		=	T*;		//	It's better to let each applications to define thier own `ptr` name.
+
 template <typename T>	using	vec		=	std::vector<T>;
 template <typename T>	using	set		=	std::set<T>;
 template <typename T>	using	list	=	std::list<T>;
@@ -40,6 +41,11 @@ using	str	=	std::string;
 
 
 
+
+/*!
+ There's complex rule on implicit copying/moving stuffs.
+ I put everything explicitly to ensure them.
+ */
 struct
 no_copy
 {
@@ -49,6 +55,7 @@ no_copy
 	auto	operator=(no_copy const&) -> no_copy& = delete;
 	auto	operator=(no_copy&&) -> no_copy& = default;
 };
+
 
 struct
 no_move

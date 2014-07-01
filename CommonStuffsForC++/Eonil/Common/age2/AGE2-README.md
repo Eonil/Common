@@ -7,8 +7,9 @@ AGE2
 
 
 
-`opt` vs `may`
---------------
+`opt` vs `????`
+---------------
+
 
 `opt` is the value or null-state. Which can be compared to a `nullptr`.
 `????` is the value or an error. This never goes to a null-state.
@@ -34,3 +35,6 @@ include tests in release build, and must be used internal only.
 
 These internal-only files all contains four underline characters (`____`)
 in their names.
+
+
+
