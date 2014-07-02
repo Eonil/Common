@@ -6,9 +6,7 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
-#define	EONIL_COMMONUTILITY_AGE2_NAMESPACE_BEGIN				namespace Eonil { namespace Common {  inline namespace age2 {
-#define	EONIL_COMMONUTILITY_AGE2_NAMESPACE_END					} } }
-
+#pragma once
 
 /*!
  @header
@@ -16,13 +14,15 @@
  Then it will not degrade build speed.
  */
 
-
-#pragma once
 #include <memory>
 #include <string>
 #include <vector>
 #include <list>
 #include <set>
+
+#define	EONIL_COMMONUTILITY_AGE2_NAMESPACE_BEGIN				namespace Eonil { namespace Common {  inline namespace age2 {
+#define	EONIL_COMMONUTILITY_AGE2_NAMESPACE_END					} } }
+
 EONIL_COMMONUTILITY_AGE2_NAMESPACE_BEGIN
 
 
@@ -30,6 +30,8 @@ EONIL_COMMONUTILITY_AGE2_NAMESPACE_BEGIN
 
 
 //template <typename T>	using	ptr		=	T*;		//	It's better to let each applications to define thier own `ptr` name.
+
+template <typename T>	using	uptr	=	std::unique_ptr<T>;
 
 template <typename T>	using	vec		=	std::vector<T>;
 template <typename T>	using	set		=	std::set<T>;

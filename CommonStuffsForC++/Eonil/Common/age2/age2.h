@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
+#pragma once
 #include "common.h"
 #include "error.h"
 #include "assignment.h"
