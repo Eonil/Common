@@ -11,16 +11,25 @@
 @interface BasicViewController ()
 @end
 
+
+
 @implementation BasicViewController
+#if EONIL_DEBUG_MODE
+{
+	BOOL	_first_init_done;
+}
 - (id)init
 {
+	UNIVERSE_DEBUG_ASSERT(_first_init_done == NO);
+	
 	self	=	[super initWithNibName:nil bundle:nil];
 	if (self)
 	{
-		
+		_first_init_done	=	YES;
 	}
 	return	self;
 }
+#endif
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
 	UNIVERSE_DELETED_METHOD();

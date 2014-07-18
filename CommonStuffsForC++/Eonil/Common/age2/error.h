@@ -102,9 +102,9 @@ err1_recoverable_bad_input_parameter_if(bool cond, str const& message = err_no_m
 }
 [[noreturn]]
 static inline auto
-err1_recoverable_bad_input_parameter_always() -> void
+err1_recoverable_bad_input_parameter_always(str const& message = err_no_message) -> void
 {
-	fail();
+	fail(message);
 }
 
 static inline auto
@@ -114,9 +114,9 @@ err2_recoverable_program_state_is_not_proper_for_this_command_if(bool cond, str 
 }
 [[noreturn]]
 static inline auto
-err2_recoverable_program_state_is_not_proper_for_this_command_always() -> void
+err2_recoverable_program_state_is_not_proper_for_this_command_always(str const& message = err_no_message) -> void
 {
-	fail();
+	fail(message);
 }
 
 
@@ -127,15 +127,15 @@ err2_recoverable_program_state_is_not_proper_for_this_command_always() -> void
  @warning	this is very rare case! consider using of err2. most errors are recoverable in most cases.
  */
 static inline auto
-err3_UNRECOVERABLE_unexpected_inconsistent_program_state_DISCOVERED_and_seems_to_be_an_internal_logic_bug_if(bool cond) -> void
+err3_UNRECOVERABLE_unexpected_inconsistent_program_state_DISCOVERED_and_seems_to_be_an_internal_logic_bug_if(bool cond, str const& message = err_no_message) -> void
 {
-	fail_if(cond);
+	fail_if(cond, message);
 }
 [[noreturn]]
 static inline auto
-err3_UNRECOVERABLE_unexpected_inconsistent_program_state_DISCOVERED_and_seems_to_be_an_internal_logic_bug_always() -> void
+err3_UNRECOVERABLE_unexpected_inconsistent_program_state_DISCOVERED_and_seems_to_be_an_internal_logic_bug_always(str const& message = err_no_message) -> void
 {
-	fail();
+	fail(message);
 }
 
 

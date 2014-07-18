@@ -8,17 +8,36 @@
 
 #import "BasicPanel.h"
 
+
+
+
+
+
+
 @implementation BasicPanel
+#if EONIL_DEBUG_MODE
 {
-	BOOL	_do_content_view_type_check;
+	BOOL	_first_init_done;
 }
+- (id)init
+{
+	UNIVERSE_DEBUG_ASSERT(_first_init_done == NO);
+	
+	self	=	[super init];
+	if (self)
+	{
+		_first_init_done	=	YES;
+	}
+	return	self;
+}
+#endif
+#if EONIL_DEBUG_MODE
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag
 {
 	self	=	[super initWithContentRect:contentRect styleMask:aStyle backing:bufferingType defer:false];
 	if (self)
 	{
 		[self setContentView:[BasicView instantiation]];
-		_do_content_view_type_check	=	YES;
 		if (! [[super contentView] isKindOfClass:[BasicView class]])
 		{
 			[super setContentView:[BasicView instantiation]];
@@ -30,10 +49,7 @@
 {
 	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
-		if (_do_content_view_type_check)
-		{
-			UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super contentView], BasicView);
-		}
+		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL([super contentView], BasicView);
 	}
 
 	////
@@ -44,14 +60,12 @@
 {
 	if (EONIL_APPKITSAN_USE_DEBUGGING_ASSERTIONS)
 	{
-		if (_do_content_view_type_check)
-		{
-			UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL(aView, BasicView);
-		}
+		UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL(aView, BasicView);
 	}
 	
 	////
 	
 	[super setContentView:aView];
 }
+#endif
 @end

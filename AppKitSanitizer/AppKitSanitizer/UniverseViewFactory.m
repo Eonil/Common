@@ -19,7 +19,7 @@
 	CALayer*	l1	=	[[CALayer alloc] init];
 	[l1 setBackgroundColor:color.CGColor];
 	
-	BasicView*	v1	=	[[BasicView alloc] init];
+	BasicView*	v1	=	[BasicView instantiation];
 	[v1 setWantsLayer:YES];
 	[v1 setLayer:l1];
 	

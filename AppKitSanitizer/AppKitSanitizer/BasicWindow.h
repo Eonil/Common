@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
-//#import <FoundationExtras/FoundationExtras.h>
+#import <FoundationExtras/NSObject+Universe.h>
 #import "BasicView.h"
 
 @interface BasicWindow : NSWindow

@@ -9,14 +9,51 @@
 #import "BasicWindowController.h"
 #import "BasicDocument.h"
 
+
+
 @interface BasicWindowController ()
 @end
 
+
+
+
 @implementation BasicWindowController
-//- (id)init
-//{
-//	UNIVERSE_DELETED_METHOD();
-//}
+#if EONIL_DEBUG_MODE
+{
+	BOOL	_first_init_done;
+}
+- (id)init
+{
+	UNIVERSE_DELETED_METHOD();
+}
+- (id)initWithWindow:(BasicWindow *)window
+{
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicWindow);
+	UNIVERSE_DEBUG_ASSERT(_first_init_done == NO);
+	
+	self	=	[super initWithWindow:window];
+	if (self)
+	{
+		_first_init_done	=	YES;
+	}
+	return	self;
+}
+#endif
++ (instancetype)instantiation
+{
+	return	[self instantiationWithWindow:[BasicWindow instantiation]];
+}
++ (instancetype)instantiationWithWindow:(BasicWindow *)window
+{
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicWindow);
+	
+	////
+	
+	return	[[super alloc] initWithWindow:window];
+//	NSWindowController*	c1	=	[super alloc];
+//	return	(id)[c1 initWithWindow:window];
+}
+#if EONIL_DEBUG_MODE
 - (void)windowDidLoad
 {
 	UNIVERSE_DELETED_METHOD();
@@ -32,14 +69,6 @@
 - (id)initWithWindowNibPath:(NSString *)windowNibPath owner:(id)owner
 {
 	UNIVERSE_DELETED_METHOD();
-}
-- (id)initWithWindow:(BasicWindow *)window
-{
-	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(window, BasicWindow);
-	
-	////
-	
-	return	[super initWithWindow:window];
 }
 - (BasicWindow *)window
 {
@@ -73,6 +102,7 @@
 	
 	[super setDocument:document];
 }
+#endif
 @end
 
 

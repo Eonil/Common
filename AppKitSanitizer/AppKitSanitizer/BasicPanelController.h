@@ -14,6 +14,10 @@
 + (id)copyWithZone:(struct _NSZone *)zone UNIVERSE_UNAVAILABLE_METHOD;
 - (id)init UNIVERSE_UNAVAILABLE_METHOD;
 - (id)initWithCoder:(NSCoder *)aDecoder UNIVERSE_UNAVAILABLE_METHOD;
+/*!
+ Designated initializer.
+ */
+- (id)initWithWindow:(NSWindow *)window;
 - (id)initWithWindowNibName:(NSString *)windowNibName UNIVERSE_UNAVAILABLE_METHOD;
 - (id)initWithWindowNibName:(NSString *)windowNibName owner:(id)owner UNIVERSE_UNAVAILABLE_METHOD;
 - (id)initWithWindowNibPath:(NSString *)windowNibPath owner:(id)owner UNIVERSE_UNAVAILABLE_METHOD;
@@ -24,8 +28,9 @@
 - (id)owner UNIVERSE_UNAVAILABLE_METHOD;
 - (NSString *)windowNibName UNIVERSE_UNAVAILABLE_METHOD;
 - (NSString *)windowNibPath UNIVERSE_UNAVAILABLE_METHOD;
-- (id)initWithWindow:(BasicPanel *)window;						//!	Designated initializer.
 - (BasicPanel *)window;
 - (void)setWindow:(BasicPanel *)window;
++ (instancetype)instantiation;
++ (instancetype)instantiationWithWindow:(BasicPanel*)window;
 @end
 

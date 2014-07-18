@@ -34,6 +34,7 @@
 		45124193195EA11300B6198A /* BasicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FB195E9E2800B6198A /* BasicObject.m */; };
 		45124194195EA11300B6198A /* NSObject+Universe.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FD195E9E2800B6198A /* NSObject+Universe.m */; };
 		45124195195EA11300B6198A /* StringUtil1.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FF195E9E2800B6198A /* StringUtil1.m */; };
+		45FBA327197781D800A7A67E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45FBA326197781D800A7A67E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +79,7 @@
 		4512411C195E9F3400B6198A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45124120195E9F3400B6198A /* FoundationExtras - iOS - Static Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoundationExtras - iOS - Static Library-Prefix.pch"; sourceTree = "<group>"; };
 		4512412C195E9F3400B6198A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		45FBA326197781D800A7A67E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		451240C0195E9E0400B6198A = {
 			isa = PBXGroup;
 			children = (
+				45FBA326197781D800A7A67E /* README.md */,
 				451240D3195E9E0400B6198A /* FoundationExtras */,
 				4512411E195E9F3400B6198A /* FoundationExtras - iOS - Static Library */,
 				451240CC195E9E0400B6198A /* Frameworks */,
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FBA327197781D800A7A67E /* README.md in Resources */,
 				451240D8195E9E0400B6198A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

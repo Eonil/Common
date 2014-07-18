@@ -14,6 +14,8 @@
 + (id)mutableCopyWithZone:(struct _NSZone *)zone UNIVERSE_UNAVAILABLE_METHOD;
 + (id)new UNIVERSE_UNAVAILABLE_METHOD;
 - (id)copy UNIVERSE_UNAVAILABLE_METHOD;
++ (id)alloc UNIVERSE_UNAVAILABLE_METHOD;
+- (id)init UNIVERSE_UNAVAILABLE_METHOD;
 + (instancetype)instantiation;
 //+ (instancetype)instantiation __attribute__((objc_method_family(new)));		//	Do not put the family attribute. Because returnning object is just plain `strong` semantics.
 @end

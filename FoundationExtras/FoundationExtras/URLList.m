@@ -13,10 +13,6 @@
 {
 	NSArray*	_arr;
 }
-+ (instancetype)instantiation
-{
-	return	[[self alloc] init];
-}
 + (instancetype)instantiationWithURL:(NSURL *)url
 {
 	return	[self instantiationWithURLs:@[url]];

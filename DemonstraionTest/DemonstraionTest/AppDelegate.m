@@ -12,11 +12,23 @@
 
 
 
+@interface		AAAVC : BasicViewController
+@end
+@implementation AAAVC
+@end
 
+@interface		BBBWC : BasicWindowController
+@end
+@implementation BBBWC
+@end
 
 
 
 @implementation AppDelegate
+{
+	AAAVC*		_aaa;
+	BBBWC*		_bbb;
+}
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	// Insert code here to initialize your application
@@ -29,6 +41,11 @@
 		[[NSAlert alertWithMessageText:@"release mode." defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@""] runModal];
 	}
 	
+	////
+	
+//	_aaa	=	[AAAVC instantiation];
+	_bbb	=	[BBBWC instantiation];
+	[_bbb.window orderFront:nil];
 }
 
 @end

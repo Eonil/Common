@@ -16,7 +16,6 @@
 - (NSURL*)	urlAtIndex:(NSUInteger)index;
 - (NSURL*)	firstURL;
 - (NSURL*)	lastURL;
-+ (instancetype)instantiation;
 + (instancetype)instantiationWithURL:(NSURL*)url;
 + (instancetype)instantiationWithURLs:(NSArray*)urls;
 - (instancetype)copy;

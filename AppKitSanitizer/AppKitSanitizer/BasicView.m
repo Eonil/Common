@@ -9,22 +9,29 @@
 #import "BasicView.h"
 
 @implementation BasicView
-- (id)initWithFrame:(NSRect)frame
+#if EONIL_DEBUG_MODE
 {
-    self = [super initWithFrame:frame];
-    if (self)
+	BOOL	_first_init_done;
+}
+- (id)initWithFrame:(NSRect)frameRect
+{
+	UNIVERSE_DEBUG_ASSERT(_first_init_done == NO);
+	
+	self	=	[super initWithFrame:frameRect];
+	if (self)
 	{
-        // Initialization code here.
-    }
-    return self;
+		_first_init_done	=	YES;
+	}
+	return	self;
 }
-
-- (void)drawRect:(NSRect)dirtyRect
-{
-    [super drawRect:dirtyRect];
-    
-    // Drawing code here.
-}
+#endif
+#if EONIL_DEBUG_MODE
+//- (void)drawRect:(NSRect)dirtyRect
+//{
+//    [super drawRect:dirtyRect];
+//    
+//    // Drawing code here.
+//}
 - (void)addConstraint:(NSLayoutConstraint *)constraint
 {
 	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(constraint, NSLayoutConstraint);
@@ -42,4 +49,6 @@
 	
 	[super addConstraints:constraints];
 }
+#endif
+
 @end

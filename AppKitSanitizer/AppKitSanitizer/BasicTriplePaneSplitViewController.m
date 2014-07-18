@@ -33,6 +33,12 @@ round_cgfloat(CGFloat const f1)
 @property	(readwrite,nonatomic,assign)	CGFloat					theOtherOrigin;
 @property	(readwrite,nonatomic,assign)	CGFloat					theOtherSize;
 @end
+
+
+
+
+
+
 @implementation BasicDocumentEditorViewController_single_axis_rect
 @dynamic	value;
 - (CGFloat)origin

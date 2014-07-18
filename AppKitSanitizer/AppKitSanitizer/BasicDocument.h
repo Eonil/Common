@@ -7,6 +7,7 @@
 //
 
 #import <AppKit/NSDocument.h>
+#import <FoundationExtras/NSObject+Universe.h>
 
 @interface BasicDocument : NSDocument
 + (id)allocWithZone:(struct _NSZone *)zone UNIVERSE_UNAVAILABLE_METHOD;

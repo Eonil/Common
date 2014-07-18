@@ -19,7 +19,10 @@ Not only for dynamic assertions, but we also can add some valuable
 attributes such as unavailability to `-[NSCopying copyWithZone]` 
 method.
 
-
 Though this limits the acceptable range of values, this does not 
 change any existing core behaviors of Cocoa classes. If you want
 such behavior overriding, do it yourself by subclassing this.
+
+
+
+
