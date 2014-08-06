@@ -29,9 +29,10 @@ EONIL_COMMONUTILITY_AGE2_NAMESPACE_BEGIN
  Then, I categorized errors into three groups.
  
  1.	Recoverable, and because of the bad input parameter (new future state).
- 2.	Recoverable, and because of improper current state.
- 3.	Unrecoverable. Program state is already corrupted. Reason doesn't matter,
-	and program must quit immediately to prevent further damage on data.
+ 2.	Recoverable, and because of proper, but unsatisfied current state.
+ 3.	Unrecoverable. Program state is improper and already corrupted. Reason 
+	doesn't matter, and program must quit immediately to prevent further 
+	damage on data.
  
  There're several convenient error raising functions named in @c err~ manner.
  These functions will not be eliminated on release build, and you need to 

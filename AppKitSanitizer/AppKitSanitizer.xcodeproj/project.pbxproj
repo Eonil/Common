@@ -44,6 +44,8 @@
 		45E7A0D21949CDD800A463CF /* UniverseViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0D01949CDD800A463CF /* UniverseViewFactory.m */; };
 		45E7A0D51949CDE400A463CF /* UniversePseudoRandomNumberFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E7A0D31949CDE400A463CF /* UniversePseudoRandomNumberFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E7A0D61949CDE400A463CF /* UniversePseudoRandomNumberFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7A0D41949CDE400A463CF /* UniversePseudoRandomNumberFactory.m */; };
+		45F2722D197996700051A754 /* UniverseWindowFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F2722B197996700051A754 /* UniverseWindowFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45F2722E197996700051A754 /* UniverseWindowFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F2722C197996700051A754 /* UniverseWindowFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,8 @@
 		45E7A0D01949CDD800A463CF /* UniverseViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniverseViewFactory.m; sourceTree = "<group>"; };
 		45E7A0D31949CDE400A463CF /* UniversePseudoRandomNumberFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversePseudoRandomNumberFactory.h; sourceTree = "<group>"; };
 		45E7A0D41949CDE400A463CF /* UniversePseudoRandomNumberFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversePseudoRandomNumberFactory.m; sourceTree = "<group>"; };
+		45F2722B197996700051A754 /* UniverseWindowFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniverseWindowFactory.h; sourceTree = "<group>"; };
+		45F2722C197996700051A754 /* UniverseWindowFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniverseWindowFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,8 @@
 				45E7A0CC1949CC3E00A463CF /* UniverseViewHierarchyQuery.m */,
 				45E7A0CF1949CDD800A463CF /* UniverseViewFactory.h */,
 				45E7A0D01949CDD800A463CF /* UniverseViewFactory.m */,
+				45F2722B197996700051A754 /* UniverseWindowFactory.h */,
+				45F2722C197996700051A754 /* UniverseWindowFactory.m */,
 				45E7A0D31949CDE400A463CF /* UniversePseudoRandomNumberFactory.h */,
 				45E7A0D41949CDE400A463CF /* UniversePseudoRandomNumberFactory.m */,
 			);
@@ -286,6 +292,7 @@
 				45E7A0C01949CB9300A463CF /* BasicTriplePaneSplitViewController.h in Headers */,
 				450AC2A41949B0A1005B7904 /* BasicView.h in Headers */,
 				450AC2A81949B0A1005B7904 /* BasicViewController.h in Headers */,
+				45F2722D197996700051A754 /* UniverseWindowFactory.h in Headers */,
 				45E7A0C91949CBFF00A463CF /* UniverseLayoutFactory.h in Headers */,
 				450AC2A61949B0A1005B7904 /* BasicColor.h in Headers */,
 				45E7A0D11949CDD800A463CF /* UniverseViewFactory.h in Headers */,
@@ -424,6 +431,7 @@
 				45E7A0CA1949CBFF00A463CF /* UniverseLayoutFactory.m in Sources */,
 				450AC29B1949B0A1005B7904 /* BasicDocument.m in Sources */,
 				450AC2A71949B0A1005B7904 /* BasicColor.m in Sources */,
+				45F2722E197996700051A754 /* UniverseWindowFactory.m in Sources */,
 				450AC2A91949B0A1005B7904 /* BasicViewController.m in Sources */,
 				450AC2A31949B0A1005B7904 /* BasicPanelController.m in Sources */,
 				45E7A0D61949CDE400A463CF /* UniversePseudoRandomNumberFactory.m in Sources */,

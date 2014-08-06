@@ -28,3 +28,4 @@
 #import "UniverseLayoutFactory.h"
 #import "UniverseViewFactory.h"
 #import "UniverseViewHierarchyQuery.h"
+#import "UniverseWindowFactory.h"
