@@ -17,8 +17,8 @@ extern "C"
 #import <Foundation/NSString.h>
 //#import <QuartzCore/QuartzCore.h>
 #else
-@import Foundation;
-@import QuartzCore;
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 #endif
 
 	
@@ -83,13 +83,12 @@ void	UNIVERSE_UNREACHABLE_CODE() UNIVERSE_NON_RETURNING_METHOD;
 
 
 
-
 extern NSString* const	UNIVERSE_DOCUMENT_AUTOSAVE_WINDOW_OUTER_SPLIT;
 extern NSString* const	UNIVERSE_DOCUMENT_AUTOSAVE_WINDOW_INNER_SPLIT;
 
 
 	
-	
+
 	
 #ifdef __cplusplus
 }
