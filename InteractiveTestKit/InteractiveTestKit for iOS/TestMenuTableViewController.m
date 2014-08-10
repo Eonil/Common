@@ -55,6 +55,11 @@ static NSString* const	CRID	=	@"MENU-CELL";
 	 [Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController class],
 	];
 	
+	NSBundle *bundle = [NSBundle mainBundle];
+    NSDictionary *info = [bundle infoDictionary];
+    NSString *prodName = [info objectForKey:@"CFBundleDisplayName"];
+	[[self navigationItem] setTitle:prodName];
+	
 	[[self tableView] setRowHeight:66];
 }
 

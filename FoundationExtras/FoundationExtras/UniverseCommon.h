@@ -50,7 +50,7 @@ extern "C"
 
 
 
-
+#define UNIVERSE_DEPRECATED_CLASS							__attribute__((deprecated))
 
 #define UNIVERSE_UNAVAILABLE_METHOD							__attribute__((unavailable))
 #define UNIVERSE_DEPRECATED_METHOD							__attribute__((deprecated))

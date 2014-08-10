@@ -49,18 +49,22 @@ analyze_keyboard_notification(NSNotification* notification)
 @implementation ExtraKeyboardPresentationNotificationController
 - (void)ExtraKeyboardPresentationNotificationController____will_show:(NSNotification*)notification
 {
+//	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);
 	[[self delegate] notifyKeyboardWillShowWithParameters:analyze_keyboard_notification(notification)];
 }
 - (void)ExtraKeyboardPresentationNotificationController____did_show:(NSNotification*)notification
 {
+//	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);
 	[[self delegate] notifyKeyboardDidShowWithParameters:analyze_keyboard_notification(notification)];
 }
 - (void)ExtraKeyboardPresentationNotificationController____will_hide:(NSNotification*)notification
 {
+//	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);
 	[[self delegate] notifyKeyboardWillHideWithParameters:analyze_keyboard_notification(notification)];
 }
 - (void)ExtraKeyboardPresentationNotificationController____did_hide:(NSNotification*)notification
 {
+//	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);
 	[[self delegate] notifyKeyboardDidHideWithParameters:analyze_keyboard_notification(notification)];
 }
 

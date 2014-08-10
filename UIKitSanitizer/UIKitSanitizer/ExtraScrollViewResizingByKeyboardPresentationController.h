@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
+#import "ExtraKeyboardPresentationNotificationController.h"
+
 
 @class		ExtraScrollViewResizingByKeyboardPresentationController;
 
-
+UNIVERSE_DEPRECATED_CLASS
 @protocol	ExtraScrollViewResizingByKeyboardPresentationControllerDelegate <NSObject>
 @optional
 - (void)	resizingControllerIsNotifyingKeyboardWillShowup:(ExtraScrollViewResizingByKeyboardPresentationController*)resizer;
@@ -44,8 +46,13 @@
  @note
  You must set the target-view to a correct @c UIScrollView object before
  keyboard appears, and the keyboard must be hiddden.
+ 
+ @deprecated
+ This class has been replaced by @c ExtraScrollViewResizingByKeyboardPresentationControllerV2
+ class. Do not use this for future project, and this class will be removed soon.
  */
-@interface	ExtraScrollViewResizingByKeyboardPresentationController : NSObject
+UNIVERSE_DEPRECATED_CLASS
+@interface	ExtraScrollViewResizingByKeyboardPresentationController : NSObject <ExtraKeyboardPresentationNotificationControllerDelegate>
 @property	(readwrite,nonatomic,weak)		id<ExtraScrollViewResizingByKeyboardPresentationControllerDelegate>		delegate;
 @property	(readonly,nonatomic,assign)		BOOL																	trackingKeyboardAppearance;
 @property	(readwrite,nonatomic,weak)		UIScrollView*															targetScrollView;

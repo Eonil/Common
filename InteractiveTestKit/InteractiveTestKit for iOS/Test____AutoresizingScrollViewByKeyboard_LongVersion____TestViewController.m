@@ -14,7 +14,7 @@
 	UITextField*	_txtv1;
 	UITextField*	_txtv2;
 	
-	ExtraScrollViewResizingByKeyboardPresentationController*	_resizer;
+	ExtraScrollViewResizingByKeyboardPresentationControllerV2*	_resizer;
 }
 
 - (void)userDidTapOnView:(id)sender
@@ -77,17 +77,17 @@
 	[_txtv2 setTextColor:[UIColor whiteColor]];
 	[_scrv addSubview:_txtv2];
 	
-	_resizer	=	[ExtraScrollViewResizingByKeyboardPresentationController instantiation];
+	_resizer	=	[ExtraScrollViewResizingByKeyboardPresentationControllerV2 instantiation];
 	[_resizer setTargetScrollView:_scrv];
 }
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
-	[_resizer startKeyboardAppearanceTracking];
+//	[_resizer startKeyboardAppearanceTracking];
 }
 - (void)viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];
-	[_resizer stopKeyboardAppearanceTracking];
+//	[_resizer stopKeyboardAppearanceTracking];
 }
 @end

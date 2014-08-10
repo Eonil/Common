@@ -9,7 +9,6 @@
 #import "ExtraScrollViewResizingByKeyboardPresentationController.h"
 #import <FoundationExtras/FoundationExtras.h>
 #import "ExtraScrollViewMetricConverter.h"
-#import "ExtraKeyboardPresentationNotificationController.h"
 
 
 
@@ -52,28 +51,6 @@ ViewAnimationParameters;
 
 
 
-
-
-
-static KBD_ANIM_PARAMS
-analyze_keyboard_notification(NSNotification* notification)
-{
-	UIViewAnimationCurve	c1	=	[[[notification userInfo] objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
-	CGFloat		d1	=	[[[notification userInfo] objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-	CGRect		f8	=	[[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];			//	rect in screen space.
-	CGRect		f9	=	[[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];				//	rect in screen space.
-	
-	////
-	
-	KBD_ANIM_PARAMS	a1;
-	a1.curveIdentifier			=	c1;
-	a1.duration					=	d1;
-	a1.beginFrameInScreenSpace	=	f8;
-	a1.endFrameInScreenSpace	=	f9;
-	
-	return	a1;
-}
-
 static CGRect
 screen_to_superview_of(UIView* view, CGRect r1)
 {
@@ -105,10 +82,9 @@ analyze_view_animation_parameters(KBD_ANIM_PARAMS const keyboard_params, UIView*
 
 
 static ViewAnimationParameters
-build_all_parameters(NSNotification* notification, UIView* target_view)
+build_all_parameters(KBD_ANIM_PARAMS const keyboard_params, UIView* target_view)
 {
-	KBD_ANIM_PARAMS const	ka1	=	analyze_keyboard_notification(notification);
-	ViewAnimationParameters const					va1	=	analyze_view_animation_parameters(ka1, target_view);
+	ViewAnimationParameters const					va1	=	analyze_view_animation_parameters(keyboard_params, target_view);
 	return	va1;
 }
 
@@ -139,7 +115,7 @@ build_all_parameters(NSNotification* notification, UIView* target_view)
 @property	(readwrite,nonatomic,assign)	CGSize						displacementAtBottomRight;
 @end
 @implementation ExtraScrollViewResizingByKeyboardPresentationController____animation_context_informations
-+ (instancetype)instantiationWithKeyboardNotification:(NSNotification*)notification andTargetView:(UIView*)view
++ (instancetype)instantiationWithKeyboardNotification:(KBD_ANIM_PARAMS)ka1 andTargetView:(UIView*)view
 {
 	NSUUID*	id1	=	[NSUUID UUID];
 	
@@ -154,7 +130,7 @@ build_all_parameters(NSNotification* notification, UIView* target_view)
 	////
 	
 	ExtraScrollViewResizingByKeyboardPresentationController____animation_context_informations*	box1	=	[self instantiation];
-	box1->_parameters	=	build_all_parameters(notification, view);
+	box1->_parameters	=	build_all_parameters(ka1, view);
 	box1->_ID			=	[id1 copy];
 	
 	[[self allBoxes] setObject:box1 forKey:id1];
@@ -205,6 +181,8 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 {
 @private
 	
+	ExtraKeyboardPresentationNotificationController*	_kbd_notify;
+	
 	BOOL							_keyboard_is_shown_up_assertion_flag;
 	ExtraScrollViewMetricConverter*	_conv;
 }
@@ -224,16 +202,11 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 {
 	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(_trackingKeyboardAppearance == NO, @"You shouldn't call this while you're tracking.");
 	
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ExtraScrollViewResizingByKeyboardPresentationController____on_keyboard_showup:) name:UIKeyboardWillShowNotification object:nil];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ExtraScrollViewResizingByKeyboardPresentationController____on_keyboard_hidedown:) name:UIKeyboardWillHideNotification object:nil];
-	
 	_trackingKeyboardAppearance	=	YES;
 }
 - (void)stopKeyboardAppearanceTracking
 {
 	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(_trackingKeyboardAppearance == YES, @"You shouldn't call this while you're not tracking.");
-	
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
 	
 	_trackingKeyboardAppearance	=	NO;
 }
@@ -248,6 +221,9 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 	self	=	[super init];
 	if (self)
 	{
+		_kbd_notify	=	[ExtraKeyboardPresentationNotificationController instantiation];
+		[_kbd_notify setDelegate:self];
+		
 		_conv	=	[ExtraScrollViewMetricConverter instantiation];
 	}
 	return	self;
@@ -259,7 +235,11 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 		[self stopKeyboardAppearanceTracking];
 	}
 }
-- (void)ExtraScrollViewResizingByKeyboardPresentationController____on_keyboard_showup:(NSNotification*)notification
+
+
+
+
+- (void)notifyKeyboardWillShowWithParameters:(ExtraKeyboardPresentationParameters)parameters
 {
 	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(_keyboard_is_shown_up_assertion_flag == NO, @"You must setup this object when keyboard is hidden. Do not setup this object when keyboard is already appeared.");
 	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_targetScrollView, UIView);
@@ -279,7 +259,8 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 	
 //	BOOL			collapse_at_top			=	top_left_disp.height >= 0;
 	
-	AnimationContextInformation*	b1		=	[AnimationContextInformation instantiationWithKeyboardNotification:notification andTargetView:_targetScrollView];
+//	AnimationContextInformation*	b1		=	[AnimationContextInformation instantiationWithKeyboardNotification:notification andTargetView:_targetScrollView];
+	AnimationContextInformation*	b1		=	[AnimationContextInformation instantiationWithKeyboardNotification:parameters andTargetView:_targetScrollView];
 	ViewAnimationParameters const	va1		=	[b1 parameters];
 	
 	[b1 setDisplacementAtTopLeft:top_left_disp];
@@ -307,51 +288,13 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 	
     [UIView commitAnimations];
 }
-- (void)ExtraScrollViewResizingByKeyboardPresentationController____showup_animation_will_start:(NSString *)animationID context:(void*)context
+- (void)notifyKeyboardDidShowWithParameters:(ExtraKeyboardPresentationParameters)parameters
 {
-	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_targetScrollView, UIView);
+	
 }
-- (void)ExtraScrollViewResizingByKeyboardPresentationController____showup_animation_did_stop:(NSString *)animationID context:(void*)context
+- (void)notifyKeyboardWillHideWithParameters:(ExtraKeyboardPresentationParameters)parameters
 {
-	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_targetScrollView, UIView);
 	
-	NSUUID*	id1	=	[[NSUUID alloc] initWithUUIDString:animationID];
-	AnimationContextInformation*	b1	=	[[AnimationContextInformation allBoxes] objectForKey:id1];
-	ViewAnimationParameters const	va1	=	[b1 parameters];
-	[[AnimationContextInformation allBoxes] removeObjectForKey:id1];
-	
-	////
-	
-	if ([b1 collapseTopSideOfTargetScrollView])
-	{
-		[_targetScrollView setTransform:CGAffineTransformIdentity];			//	transform must be identity first to apply frame correctly.
-		[_targetScrollView setFrame:va1.viewEndFrame];
-		[_conv setDisplacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline:[b1 displacementAtBottomRight]];
-	}
-	else
-	{
-	}
-	
-	////
-	
-	if ([[self delegate] respondsToSelector:@selector(resizingControllerIsNotifyingKeyboardDidShowup:)])
-	{
-		[[self delegate] resizingControllerIsNotifyingKeyboardDidShowup:self];
-	}
-	
-	_keyboard_is_shown_up_assertion_flag	=	YES;
-}
-
-
-
-
-
-
-
-
-
-- (void)ExtraScrollViewResizingByKeyboardPresentationController____on_keyboard_hidedown:(NSNotification*)notification
-{
 	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(_keyboard_is_shown_up_assertion_flag == YES, @"You must setup this object when keyboard is shown. Do not setup this object when keyboard is already disappeared.");
 	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_targetScrollView, UIView);
 	//	NSLog(@"KBD-HIDEDOWN = %@", notification);
@@ -363,7 +306,7 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 	
 	////
 	
-	ViewAnimationParameters const	va1		=	build_all_parameters(notification, _targetScrollView);
+	ViewAnimationParameters const	va1		=	build_all_parameters(parameters, _targetScrollView);
 	
 	CGRect			current_bounds			=	[_targetScrollView bounds];
 	CGRect			future_bounds			=	[[_targetScrollView superview] convertRect:va1.viewEndFrame toView:_targetScrollView];
@@ -422,6 +365,55 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 	
 	_keyboard_is_shown_up_assertion_flag	=	NO;
 }
+- (void)notifyKeyboardDidHideWithParameters:(ExtraKeyboardPresentationParameters)parameters
+{
+	
+}
+
+
+
+- (void)ExtraScrollViewResizingByKeyboardPresentationController____showup_animation_will_start:(NSString *)animationID context:(void*)context
+{
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_targetScrollView, UIView);
+}
+- (void)ExtraScrollViewResizingByKeyboardPresentationController____showup_animation_did_stop:(NSString *)animationID context:(void*)context
+{
+	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_targetScrollView, UIView);
+	
+	NSUUID*	id1	=	[[NSUUID alloc] initWithUUIDString:animationID];
+	AnimationContextInformation*	b1	=	[[AnimationContextInformation allBoxes] objectForKey:id1];
+	ViewAnimationParameters const	va1	=	[b1 parameters];
+	[[AnimationContextInformation allBoxes] removeObjectForKey:id1];
+	
+	////
+	
+	if ([b1 collapseTopSideOfTargetScrollView])
+	{
+		[_targetScrollView setTransform:CGAffineTransformIdentity];			//	transform must be identity first to apply frame correctly.
+		[_targetScrollView setFrame:va1.viewEndFrame];
+		[_conv setDisplacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline:[b1 displacementAtBottomRight]];
+	}
+	else
+	{
+	}
+	
+	////
+	
+	if ([[self delegate] respondsToSelector:@selector(resizingControllerIsNotifyingKeyboardDidShowup:)])
+	{
+		[[self delegate] resizingControllerIsNotifyingKeyboardDidShowup:self];
+	}
+	
+	_keyboard_is_shown_up_assertion_flag	=	YES;
+}
+
+
+
+
+
+
+
+
 - (void)ExtraScrollViewResizingByKeyboardPresentationController____hidedown_animation_will_start:(NSString *)animationID context:(void*)context
 {
 	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(_targetScrollView, UIView);
