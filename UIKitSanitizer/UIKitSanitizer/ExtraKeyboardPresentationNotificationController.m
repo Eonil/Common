@@ -83,12 +83,18 @@ analyze_keyboard_notification(NSNotification* notification)
 - (void)ExtraKeyboardPresentationNotificationController____will_change_frame:(NSNotification*)notification
 {
 	LOG_EVENT();
-	[[self delegate] notifyKeyboardWillChangeFrameWithParameters:analyze_keyboard_notification(notification)];
+	if ([[self delegate] respondsToSelector:@selector(notifyKeyboardWillChangeFrameWithParameters:)])
+	{
+		[[self delegate] notifyKeyboardWillChangeFrameWithParameters:analyze_keyboard_notification(notification)];
+	}
 }
 - (void)ExtraKeyboardPresentationNotificationController____did_change_frame:(NSNotification*)notification
 {
 	LOG_EVENT();
-	[[self delegate] notifyKeyboardDidChangeFrameWithParameters:analyze_keyboard_notification(notification)];
+	if ([[self delegate] respondsToSelector:@selector(notifyKeyboardDidChangeFrameWithParameters:)])
+	{
+		[[self delegate] notifyKeyboardDidChangeFrameWithParameters:analyze_keyboard_notification(notification)];
+	}
 }
 
 - (id)init

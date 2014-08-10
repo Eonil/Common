@@ -42,11 +42,12 @@ ExtraKeyboardPresentationParameters;
 
 @class		ExtraKeyboardPresentationNotificationController;
 
-@protocol	ExtraKeyboardPresentationNotificationControllerDelegate
+@protocol	ExtraKeyboardPresentationNotificationControllerDelegate <NSObject>
 - (void)	notifyKeyboardWillShowWithParameters:(ExtraKeyboardPresentationParameters)parameters;
 - (void)	notifyKeyboardDidShowWithParameters:(ExtraKeyboardPresentationParameters)parameters;
 - (void)	notifyKeyboardWillHideWithParameters:(ExtraKeyboardPresentationParameters)parameters;
 - (void)	notifyKeyboardDidHideWithParameters:(ExtraKeyboardPresentationParameters)parameters;
+@optional
 - (void)	notifyKeyboardWillChangeFrameWithParameters:(ExtraKeyboardPresentationParameters)parameters;
 - (void)	notifyKeyboardDidChangeFrameWithParameters:(ExtraKeyboardPresentationParameters)parameters;
 @end

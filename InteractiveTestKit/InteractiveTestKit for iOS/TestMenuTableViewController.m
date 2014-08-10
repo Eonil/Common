@@ -9,7 +9,7 @@
 #import "TestMenuTableViewController.h"
 #import "TestItemViewController.h"
 #import "Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.h"
-
+#import "Test____KeyboardStickeyPane____TestViewController.h"
 
 //typedef UIViewController* (^ViewControllerGenerator)(void);
 //
@@ -53,6 +53,7 @@ static NSString* const	CRID	=	@"MENU-CELL";
 	_test_items	=	@
 	[
 	 [Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController class],
+//	 [Test____KeyboardStickeyPane____TestViewController class],
 	];
 	
 	NSBundle *bundle = [NSBundle mainBundle];

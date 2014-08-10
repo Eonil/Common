@@ -10,10 +10,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import <FoundationExtras/FoundationExtras.h>
 
 @class		ExtraViewResizingByKeyboardPresentationController;
 
-
+UNIVERSE_DEPRECATED_CLASS
 @protocol	ExtraViewResizingByKeyboardPresentationControllerDelegate <NSObject>
 @optional
 - (void)	resizingControllerIsNotifyingKeyboardWillShowup:(ExtraViewResizingByKeyboardPresentationController*)resizer;
@@ -37,7 +38,11 @@
  @note
  You must set the target-view to a correct @c UIView object before
  keyboard appears, and the keyboard must be hiddden.
+ 
+ @deprecated
+ @c UIView is not enough to do this thing. Do not use this class.
  */
+UNIVERSE_DEPRECATED_CLASS
 @interface	ExtraViewResizingByKeyboardPresentationController : NSObject
 @property	(readwrite,nonatomic,weak)		id<ExtraViewResizingByKeyboardPresentationControllerDelegate>		delegate;
 @property	(readonly,nonatomic,assign)		BOOL		trackingKeyboardAppearance;

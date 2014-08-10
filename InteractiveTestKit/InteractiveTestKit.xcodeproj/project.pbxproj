@@ -34,6 +34,7 @@
 		4542F4901997234D00F95720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F48F1997234D00F95720 /* UIKit.framework */; };
 		4542F4911997235300F95720 /* libFoundationExtras.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F480199722F300F95720 /* libFoundationExtras.a */; };
 		4542F4921997235900F95720 /* libUIKitSanitizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F466199722C900F95720 /* libUIKitSanitizer.a */; };
+		455604B11997D1F700F3B588 /* Test____KeyboardStickeyPane____TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 455604B01997D1F700F3B588 /* Test____KeyboardStickeyPane____TestViewController.m */; };
 		45B73C48199739D70080A6E3 /* TestMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C47199739D70080A6E3 /* TestMenuTableViewController.m */; };
 		45B73C5119973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5019973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m */; };
 		45B73C5419973B9B0080A6E3 /* TestItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5319973B9B0080A6E3 /* TestItemViewController.m */; };
@@ -139,6 +140,8 @@
 		4542F460199722C800F95720 /* UIKitSanitizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKitSanitizer.xcodeproj; path = ../UIKitSanitizer/UIKitSanitizer.xcodeproj; sourceTree = "<group>"; };
 		4542F476199722F300F95720 /* FoundationExtras.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationExtras.xcodeproj; path = ../FoundationExtras/FoundationExtras.xcodeproj; sourceTree = "<group>"; };
 		4542F48F1997234D00F95720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		455604AF1997D1F700F3B588 /* Test____KeyboardStickeyPane____TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test____KeyboardStickeyPane____TestViewController.h"; sourceTree = "<group>"; };
+		455604B01997D1F700F3B588 /* Test____KeyboardStickeyPane____TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Test____KeyboardStickeyPane____TestViewController.m"; sourceTree = "<group>"; };
 		45B73C46199739D70080A6E3 /* TestMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMenuTableViewController.h; sourceTree = "<group>"; };
 		45B73C47199739D70080A6E3 /* TestMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMenuTableViewController.m; sourceTree = "<group>"; };
 		45B73C4F19973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.h"; sourceTree = "<group>"; };
@@ -297,6 +300,8 @@
 				45B73C5319973B9B0080A6E3 /* TestItemViewController.m */,
 				45B73C4F19973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.h */,
 				45B73C5019973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m */,
+				455604AF1997D1F700F3B588 /* Test____KeyboardStickeyPane____TestViewController.h */,
+				455604B01997D1F700F3B588 /* Test____KeyboardStickeyPane____TestViewController.m */,
 				4542F41319971DC300F95720 /* Images.xcassets */,
 				4542F40819971DC300F95720 /* Supporting Files */,
 			);
@@ -590,6 +595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455604B11997D1F700F3B588 /* Test____KeyboardStickeyPane____TestViewController.m in Sources */,
 				45B73C48199739D70080A6E3 /* TestMenuTableViewController.m in Sources */,
 				45B73C5419973B9B0080A6E3 /* TestItemViewController.m in Sources */,
 				4542F41219971DC300F95720 /* ApplicationController.m in Sources */,

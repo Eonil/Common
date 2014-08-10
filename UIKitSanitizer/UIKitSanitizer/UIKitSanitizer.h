@@ -10,3 +10,4 @@
 #import "ExtraViewResizingByKeyboardPresentationController.h"
 #import "ExtraScrollViewResizingByKeyboardPresentationController.h"
 #import "ExtraScrollViewResizingByKeyboardPresentationControllerV2.h"
+#import "ExtraKeyboardStickyPane.h"
