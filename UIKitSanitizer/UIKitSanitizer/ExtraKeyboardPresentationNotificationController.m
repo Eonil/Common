@@ -47,6 +47,18 @@ analyze_keyboard_notification(NSNotification* notification)
 
 
 @implementation ExtraKeyboardPresentationNotificationController
+
++ (void)performAnimationBlock:(void (^)(void))block withParameters:(ExtraKeyboardPresentationParameters)parameters
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationCurve:parameters.curveIdentifier];
+    [UIView setAnimationDuration:parameters.duration];
+	
+	block();
+	
+    [UIView commitAnimations];
+}
+
 - (void)ExtraKeyboardPresentationNotificationController____will_show:(NSNotification*)notification
 {
 //	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);

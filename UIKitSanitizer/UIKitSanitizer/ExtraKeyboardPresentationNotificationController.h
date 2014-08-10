@@ -60,4 +60,5 @@ ExtraKeyboardPresentationParameters;
  */
 @interface	ExtraKeyboardPresentationNotificationController : BasicObject
 @property	(readwrite,nonatomic,assign)		id<ExtraKeyboardPresentationNotificationControllerDelegate>		delegate;
++ (void)	performAnimationBlock:(void(^)(void))block withParameters:(ExtraKeyboardPresentationParameters)parameters;			///<	Use parameters obtained from delegate methods of @c ExtraKeyboardPresentationNotificationControllerDelegate to perform equally styled animation with keyboard.
 @end

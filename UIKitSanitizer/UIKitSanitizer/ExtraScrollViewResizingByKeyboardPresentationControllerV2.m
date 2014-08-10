@@ -16,9 +16,6 @@
 
 
 
-
-
-
 /*!
  All coordinates are in target-view's superview space.
  Frame height can go negative if the keyboards fully covers the view area.
@@ -36,13 +33,6 @@ struct
 	ExtraKeyboardPresentationParameters			keyboardParameters;
 }
 ViewAnimationParameters;
-
-
-
-
-
-
-
 
 
 
@@ -74,27 +64,6 @@ analyze_view_animation_parameters(ExtraKeyboardPresentationParameters const keyb
 	
 	return	ps1;
 }
-
-
-
-
-
-
-
-static ViewAnimationParameters
-build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, UIView* target_view)
-{
-	ViewAnimationParameters const					va1	=	analyze_view_animation_parameters(keyboard_params, target_view);
-	return	va1;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -155,15 +124,6 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 
 
 
-
-
-
-
-
-
-
-
-
 - (void)notifyKeyboardWillShowWithParameters:(ExtraKeyboardPresentationParameters)parameters
 {
 	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(_kbd_is_presenting == NO, @"You shouldn't setup this object while keyboard show/hide animation is performing.");
@@ -172,7 +132,7 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 	
 	////
 	
-	ViewAnimationParameters const	va1		=	build_all_parameters(parameters, _targetScrollView);
+	ViewAnimationParameters const	va1		=	analyze_view_animation_parameters(parameters, _targetScrollView);
 	
 	CGSize			top_left_disp			=	[_conv displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline];
 	CGSize			bottom_right_disp		=	[_conv displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline];
@@ -186,21 +146,17 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 	
 	////
 	
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationCurve:va1.keyboardParameters.curveIdentifier];
-    [UIView setAnimationDuration:va1.keyboardParameters.duration];
-	
-	if (collapse_at_top)
-	{
-		CGAffineTransform	t1	=	CGAffineTransformMakeTranslation(0, va1.verticalDisplacement);
-		[_targetScrollView setTransform:t1];
-	}
-	else
-	{
-		[_targetScrollView setFrame:va1.viewEndFrame];
-	}
-	
-    [UIView commitAnimations];
+	[ExtraKeyboardPresentationNotificationController performAnimationBlock:^{
+		if (collapse_at_top)
+		{
+			CGAffineTransform	t1	=	CGAffineTransformMakeTranslation(0, va1.verticalDisplacement);
+			[_targetScrollView setTransform:t1];
+		}
+		else
+		{
+			[_targetScrollView setFrame:va1.viewEndFrame];
+		}
+	} withParameters:parameters];
 	
 	_kbd_is_presenting	=	YES;
 }
@@ -217,7 +173,7 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 	{
 		[_targetScrollView setTransform:CGAffineTransformIdentity];			//	transform must be identity first to apply frame correctly.
 		
-		ViewAnimationParameters const	va1		=	build_all_parameters(parameters, _targetScrollView);	//	must be evaluated after transform becomes identity.
+		ViewAnimationParameters const	va1		=	analyze_view_animation_parameters(parameters, _targetScrollView);	//	must be evaluated after transform becomes identity.
 
 		[_targetScrollView setFrame:va1.viewEndFrame];
 		[_conv setDisplacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline:_last_displacement_at_bottom_right];
@@ -233,10 +189,6 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 
 
 
-
-
-
-
 - (void)notifyKeyboardWillHideWithParameters:(ExtraKeyboardPresentationParameters)parameters
 {
 	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(_kbd_is_presenting == NO, @"You shouldn't setup this object while keyboard show/hide animation is performing.");
@@ -245,7 +197,7 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 	
 	////
 	
-	ViewAnimationParameters const	va1		=	build_all_parameters(parameters, _targetScrollView);
+	ViewAnimationParameters const	va1		=	analyze_view_animation_parameters(parameters, _targetScrollView);
 	
 	CGRect			current_bounds			=	[_targetScrollView bounds];
 	CGRect			future_bounds			=	[[_targetScrollView superview] convertRect:va1.viewEndFrame toView:_targetScrollView];
@@ -283,20 +235,17 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 	
 	////
 	
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationCurve:va1.keyboardParameters.curveIdentifier];
-    [UIView setAnimationDuration:va1.keyboardParameters.duration];
-	
-	if (expands_at_top)
-	{
-		[_targetScrollView setTransform:CGAffineTransformIdentity];
- 	}
-	else
-	{
-		[_targetScrollView setContentOffset:CGPointZero];		//	this is relying on assumption of the scrolling will be animated by curently set animation parameters. this is not guranteed and might be broken in future versions.
-	}
-	
-    [UIView commitAnimations];
+	[ExtraKeyboardPresentationNotificationController performAnimationBlock:^{
+		if (expands_at_top)
+		{
+			[_targetScrollView setTransform:CGAffineTransformIdentity];
+		}
+		else
+		{
+			[_targetScrollView setContentOffset:CGPointZero];		//	this is relying on assumption of the scrolling will be animated by curently set animation parameters. this is not guranteed and might be broken in future versions.
+		}
+		
+	} withParameters:parameters];
 	
 	_kbd_is_dismissing	=	YES;
 }
@@ -307,16 +256,6 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 	
 	_kbd_is_dismissing	=	NO;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -337,8 +276,6 @@ build_all_parameters(ExtraKeyboardPresentationParameters const keyboard_params, 
 - (void)dealloc
 {
 }
-
-
 
 
 @end
