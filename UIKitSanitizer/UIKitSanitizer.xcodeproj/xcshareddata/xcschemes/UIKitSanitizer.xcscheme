@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4512411A195E9F3400B6198A"
-               BuildableName = "libFoundationExtras.a"
-               BlueprintName = "FoundationExtras - iOS - Static Library"
-               ReferencedContainer = "container:FoundationExtras.xcodeproj">
+               BlueprintIdentifier = "4542F3CD19971BB800F95720"
+               BuildableName = "libUIKitSanitizer.a"
+               BlueprintName = "UIKitSanitizer - iOS Static Library"
+               ReferencedContainer = "container:UIKitSanitizer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45124128195E9F3400B6198A"
-               BuildableName = "FoundationExtras - iOS - Static LibraryTests.xctest"
-               BlueprintName = "FoundationExtras - iOS - Static LibraryTests"
-               ReferencedContainer = "container:FoundationExtras.xcodeproj">
+               BlueprintIdentifier = "4542F3DA19971BB800F95720"
+               BuildableName = "UIKitSanitizerTests.xctest"
+               BlueprintName = "UIKitSanitizerTests"
+               ReferencedContainer = "container:UIKitSanitizer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

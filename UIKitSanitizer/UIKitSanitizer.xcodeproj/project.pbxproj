@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4542F3CF19971BB800F95720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F37319971B5E00F95720 /* Foundation.framework */; };
+		4542F3D619971BB800F95720 /* UIKitSanitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3D519971BB800F95720 /* UIKitSanitizer.m */; };
+		4542F3DC19971BB800F95720 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F38C19971B5E00F95720 /* XCTest.framework */; };
+		4542F3DD19971BB800F95720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F37319971B5E00F95720 /* Foundation.framework */; };
+		4542F3DE19971BB800F95720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F37719971B5E00F95720 /* UIKit.framework */; };
+		4542F3E119971BB800F95720 /* libUIKitSanitizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F3CE19971BB800F95720 /* libUIKitSanitizer.a */; };
+		4542F3E719971BB800F95720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4542F3E519971BB800F95720 /* InfoPlist.strings */; };
+		4542F3E919971BB800F95720 /* UIKitSanitizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3E819971BB800F95720 /* UIKitSanitizerTests.m */; };
+		4542F3F319971C1700F95720 /* ExtraScrollViewMetricConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F219971C1700F95720 /* ExtraScrollViewMetricConverter.m */; };
+		4542F3F619971CD800F95720 /* UIKitSanitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3D319971BB800F95720 /* UIKitSanitizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4542F3F719971CD800F95720 /* ExtraScrollViewMetricConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F119971C1700F95720 /* ExtraScrollViewMetricConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4542F3FA19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F819971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h */; };
+		4542F3FB19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4542F3DF19971BB800F95720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4542F36819971B5E00F95720 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4542F3CD19971BB800F95720;
+			remoteInfo = UIKitSanitizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4542F37319971B5E00F95720 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4542F37519971B5E00F95720 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4542F37719971B5E00F95720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4542F38C19971B5E00F95720 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4542F3CE19971BB800F95720 /* libUIKitSanitizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIKitSanitizer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4542F3D219971BB800F95720 /* UIKitSanitizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitSanitizer-Prefix.pch"; sourceTree = "<group>"; };
+		4542F3D319971BB800F95720 /* UIKitSanitizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitSanitizer.h; sourceTree = "<group>"; };
+		4542F3D519971BB800F95720 /* UIKitSanitizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitSanitizer.m; sourceTree = "<group>"; };
+		4542F3DB19971BB800F95720 /* UIKitSanitizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitSanitizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4542F3E419971BB800F95720 /* UIKitSanitizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitSanitizerTests-Info.plist"; sourceTree = "<group>"; };
+		4542F3E619971BB800F95720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4542F3E819971BB800F95720 /* UIKitSanitizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitSanitizerTests.m; sourceTree = "<group>"; };
+		4542F3F119971C1700F95720 /* ExtraScrollViewMetricConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraScrollViewMetricConverter.h; sourceTree = "<group>"; };
+		4542F3F219971C1700F95720 /* ExtraScrollViewMetricConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraScrollViewMetricConverter.m; sourceTree = "<group>"; };
+		4542F3F819971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraViewResizingByKeyboardPresentationController.h; sourceTree = "<group>"; };
+		4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraViewResizingByKeyboardPresentationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4542F3CB19971BB800F95720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4542F3CF19971BB800F95720 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4542F3D819971BB800F95720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4542F3E119971BB800F95720 /* libUIKitSanitizer.a in Frameworks */,
+				4542F3DC19971BB800F95720 /* XCTest.framework in Frameworks */,
+				4542F3DE19971BB800F95720 /* UIKit.framework in Frameworks */,
+				4542F3DD19971BB800F95720 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4542F36719971B5E00F95720 = {
+			isa = PBXGroup;
+			children = (
+				4542F3D019971BB800F95720 /* UIKitSanitizer */,
+				4542F3E219971BB800F95720 /* UIKitSanitizerTests */,
+				4542F37219971B5E00F95720 /* Frameworks */,
+				4542F37119971B5E00F95720 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4542F37119971B5E00F95720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3CE19971BB800F95720 /* libUIKitSanitizer.a */,
+				4542F3DB19971BB800F95720 /* UIKitSanitizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4542F37219971B5E00F95720 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4542F37319971B5E00F95720 /* Foundation.framework */,
+				4542F37519971B5E00F95720 /* CoreGraphics.framework */,
+				4542F37719971B5E00F95720 /* UIKit.framework */,
+				4542F38C19971B5E00F95720 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4542F3D019971BB800F95720 /* UIKitSanitizer */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3D319971BB800F95720 /* UIKitSanitizer.h */,
+				4542F3D519971BB800F95720 /* UIKitSanitizer.m */,
+				4542F3F119971C1700F95720 /* ExtraScrollViewMetricConverter.h */,
+				4542F3F219971C1700F95720 /* ExtraScrollViewMetricConverter.m */,
+				4542F3F819971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h */,
+				4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */,
+				4542F3D119971BB800F95720 /* Supporting Files */,
+			);
+			path = UIKitSanitizer;
+			sourceTree = "<group>";
+		};
+		4542F3D119971BB800F95720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3D219971BB800F95720 /* UIKitSanitizer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4542F3E219971BB800F95720 /* UIKitSanitizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3E819971BB800F95720 /* UIKitSanitizerTests.m */,
+				4542F3E319971BB800F95720 /* Supporting Files */,
+			);
+			path = UIKitSanitizerTests;
+			sourceTree = "<group>";
+		};
+		4542F3E319971BB800F95720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3E419971BB800F95720 /* UIKitSanitizerTests-Info.plist */,
+				4542F3E519971BB800F95720 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4542F3F519971CD000F95720 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4542F3F619971CD800F95720 /* UIKitSanitizer.h in Headers */,
+				4542F3FA19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h in Headers */,
+				4542F3F719971CD800F95720 /* ExtraScrollViewMetricConverter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4542F3CD19971BB800F95720 /* UIKitSanitizer - iOS Static Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4542F3EA19971BB800F95720 /* Build configuration list for PBXNativeTarget "UIKitSanitizer - iOS Static Library" */;
+			buildPhases = (
+				4542F3CA19971BB800F95720 /* Sources */,
+				4542F3CB19971BB800F95720 /* Frameworks */,
+				4542F3F519971CD000F95720 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIKitSanitizer - iOS Static Library";
+			productName = UIKitSanitizer;
+			productReference = 4542F3CE19971BB800F95720 /* libUIKitSanitizer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4542F3DA19971BB800F95720 /* UIKitSanitizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4542F3ED19971BB800F95720 /* Build configuration list for PBXNativeTarget "UIKitSanitizerTests" */;
+			buildPhases = (
+				4542F3D719971BB800F95720 /* Sources */,
+				4542F3D819971BB800F95720 /* Frameworks */,
+				4542F3D919971BB800F95720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4542F3E019971BB800F95720 /* PBXTargetDependency */,
+			);
+			name = UIKitSanitizerTests;
+			productName = UIKitSanitizerTests;
+			productReference = 4542F3DB19971BB800F95720 /* UIKitSanitizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4542F36819971B5E00F95720 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Eonil;
+			};
+			buildConfigurationList = 4542F36B19971B5E00F95720 /* Build configuration list for PBXProject "UIKitSanitizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4542F36719971B5E00F95720;
+			productRefGroup = 4542F37119971B5E00F95720 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4542F3CD19971BB800F95720 /* UIKitSanitizer - iOS Static Library */,
+				4542F3DA19971BB800F95720 /* UIKitSanitizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4542F3D919971BB800F95720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4542F3E719971BB800F95720 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4542F3CA19971BB800F95720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4542F3F319971C1700F95720 /* ExtraScrollViewMetricConverter.m in Sources */,
+				4542F3D619971BB800F95720 /* UIKitSanitizer.m in Sources */,
+				4542F3FB19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4542F3D719971BB800F95720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4542F3E919971BB800F95720 /* UIKitSanitizerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4542F3E019971BB800F95720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4542F3CD19971BB800F95720 /* UIKitSanitizer - iOS Static Library */;
+			targetProxy = 4542F3DF19971BB800F95720 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4542F3E519971BB800F95720 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4542F3E619971BB800F95720 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4542F39A19971B5E00F95720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$SRCROOT\"/../FoundationExtras",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = $PROJECT_NAME;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4542F39B19971B5E00F95720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$SRCROOT\"/../FoundationExtras",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = $PROJECT_NAME;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4542F3EB19971BB800F95720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/UIKitSanitizer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIKitSanitizer/UIKitSanitizer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4542F3EC19971BB800F95720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/UIKitSanitizer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIKitSanitizer/UIKitSanitizer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4542F3EE19971BB800F95720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIKitSanitizer/UIKitSanitizer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UIKitSanitizerTests/UIKitSanitizerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4542F3EF19971BB800F95720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UIKitSanitizer/UIKitSanitizer-Prefix.pch";
+				INFOPLIST_FILE = "UIKitSanitizerTests/UIKitSanitizerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4542F36B19971B5E00F95720 /* Build configuration list for PBXProject "UIKitSanitizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4542F39A19971B5E00F95720 /* Debug */,
+				4542F39B19971B5E00F95720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4542F3EA19971BB800F95720 /* Build configuration list for PBXNativeTarget "UIKitSanitizer - iOS Static Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4542F3EB19971BB800F95720 /* Debug */,
+				4542F3EC19971BB800F95720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4542F3ED19971BB800F95720 /* Build configuration list for PBXNativeTarget "UIKitSanitizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4542F3EE19971BB800F95720 /* Debug */,
+				4542F3EF19971BB800F95720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4542F36819971B5E00F95720 /* Project object */;
+}

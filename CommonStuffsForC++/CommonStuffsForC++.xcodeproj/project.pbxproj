@@ -82,6 +82,14 @@
 		45124264195EE04E00B6198A /* opt____test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "opt____test.h"; sourceTree = "<group>"; };
 		45124265195EE04E00B6198A /* opt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opt.cpp; sourceTree = "<group>"; };
 		45124266195EE04E00B6198A /* opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opt.h; sourceTree = "<group>"; };
+		4542F3A719971B8900F95720 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4542F3AB19971B8900F95720 /* UIKitSanitizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitSanitizer-Prefix.pch"; sourceTree = "<group>"; };
+		4542F3AC19971B8900F95720 /* UIKitSanitizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitSanitizer.h; sourceTree = "<group>"; };
+		4542F3AE19971B8900F95720 /* UIKitSanitizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitSanitizer.m; sourceTree = "<group>"; };
+		4542F3B719971B8900F95720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4542F3BE19971B8900F95720 /* UIKitSanitizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitSanitizerTests-Info.plist"; sourceTree = "<group>"; };
+		4542F3C019971B8900F95720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4542F3C219971B8900F95720 /* UIKitSanitizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitSanitizerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,8 @@
 				4512424F195EE02C00B6198A /* Eonil */,
 				45124226195EDD8F00B6198A /* CommonStuffsForC++ */,
 				4512423B195EDD8F00B6198A /* CommonStuffsForC++Tests */,
+				4542F3A919971B8900F95720 /* UIKitSanitizer */,
+				4542F3BC19971B8900F95720 /* UIKitSanitizerTests */,
 				4512421F195EDD8F00B6198A /* Frameworks */,
 				4512421E195EDD8F00B6198A /* Products */,
 			);
@@ -131,6 +141,8 @@
 			children = (
 				45124220195EDD8F00B6198A /* Cocoa.framework */,
 				45124235195EDD8F00B6198A /* XCTest.framework */,
+				4542F3A719971B8900F95720 /* Foundation.framework */,
+				4542F3B719971B8900F95720 /* UIKit.framework */,
 				45124222195EDD8F00B6198A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -224,6 +236,42 @@
 				45124252195EE04D00B6198A /* all____test.cpp */,
 			);
 			path = age2;
+			sourceTree = "<group>";
+		};
+		4542F3A919971B8900F95720 /* UIKitSanitizer */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3AC19971B8900F95720 /* UIKitSanitizer.h */,
+				4542F3AE19971B8900F95720 /* UIKitSanitizer.m */,
+				4542F3AA19971B8900F95720 /* Supporting Files */,
+			);
+			path = UIKitSanitizer;
+			sourceTree = "<group>";
+		};
+		4542F3AA19971B8900F95720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3AB19971B8900F95720 /* UIKitSanitizer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4542F3BC19971B8900F95720 /* UIKitSanitizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3C219971B8900F95720 /* UIKitSanitizerTests.m */,
+				4542F3BD19971B8900F95720 /* Supporting Files */,
+			);
+			path = UIKitSanitizerTests;
+			sourceTree = "<group>";
+		};
+		4542F3BD19971B8900F95720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4542F3BE19971B8900F95720 /* UIKitSanitizerTests-Info.plist */,
+				4542F3BF19971B8900F95720 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +438,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		4542F3BF19971B8900F95720 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4542F3C019971B8900F95720 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -552,6 +608,7 @@
 				45124247195EDD8F00B6198A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45124248195EDD8F00B6198A /* Build configuration list for PBXNativeTarget "CommonStuffsForC++Tests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +617,7 @@
 				4512424A195EDD8F00B6198A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

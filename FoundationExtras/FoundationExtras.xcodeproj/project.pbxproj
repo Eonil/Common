@@ -75,7 +75,7 @@
 		45124103195E9E2800B6198A /* UniverseDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniverseDoctor.m; sourceTree = "<group>"; };
 		45124104195E9E2800B6198A /* URLList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLList.h; sourceTree = "<group>"; };
 		45124105195E9E2800B6198A /* URLList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLList.m; sourceTree = "<group>"; };
-		4512411B195E9F3400B6198A /* libFoundationExtras - iOS - Static Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFoundationExtras - iOS - Static Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4512411B195E9F3400B6198A /* libFoundationExtras.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationExtras.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4512411C195E9F3400B6198A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45124120195E9F3400B6198A /* FoundationExtras - iOS - Static Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoundationExtras - iOS - Static Library-Prefix.pch"; sourceTree = "<group>"; };
 		4512412C195E9F3400B6198A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				451240CA195E9E0400B6198A /* FoundationExtras.framework */,
-				4512411B195E9F3400B6198A /* libFoundationExtras - iOS - Static Library.a */,
+				4512411B195E9F3400B6198A /* libFoundationExtras.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 			);
 			name = "FoundationExtras - iOS - Static Library";
 			productName = "FoundationExtras - iOS - Static Library";
-			productReference = 4512411B195E9F3400B6198A /* libFoundationExtras - iOS - Static Library.a */;
+			productReference = 4512411B195E9F3400B6198A /* libFoundationExtras.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -446,7 +446,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -460,7 +459,6 @@
 				GCC_PREFIX_HEADER = "FoundationExtras - iOS - Static Library/FoundationExtras - iOS - Static Library-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;

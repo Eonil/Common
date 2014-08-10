@@ -14,6 +14,9 @@
       location = "group:AppKitSanitizer/AppKitSanitizer.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:UIKitSanitizer/UIKitSanitizer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DemonstraionTest/DemonstrationTest.xcodeproj">
    </FileRef>
 </Workspace>
