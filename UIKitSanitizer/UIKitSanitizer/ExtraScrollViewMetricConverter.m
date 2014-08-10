@@ -23,31 +23,33 @@
 	CGSize	invisible_sz	=	CGSizeMake(s1.width - visible_sz.width, s1.height - visible_sz.height);
 	return	invisible_sz;
 }
-- (CGPoint)displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline
+- (CGSize)displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline
 {
 	CGPoint	p1	=	[_scrollView contentOffset];
-	return	CGPointMake(-p1.x, -p1.y);
+	return	CGSizeMake(-p1.x, -p1.y);
 }
-- (void)setDisplacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline:(CGPoint)displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline
+- (void)setDisplacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline:(CGSize)displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline
 {
-	CGPoint	p1	=	displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline;
-	p1.x		=	-p1.x;
-	p1.y		=	-p1.y;
-	[_scrollView setContentOffset:p1];
+	CGSize	p1	=	displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline;
+	p1.width	=	-p1.width;
+	p1.height	=	-p1.height;
+	
+	CGPoint	p2	=	CGPointMake(p1.width, p1.height);
+	[_scrollView setContentOffset:p2];
 }
-- (CGPoint)displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline
+- (CGSize)displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline
 {
 	CGSize	invisible_sz	=	[self invisiblePortionSizeInBounds];
-	CGPoint	disp			=	[self displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline];
-	CGPoint	disp_at_bottom	=	CGPointMake(disp.x + invisible_sz.width, disp.y + invisible_sz.height);
+	CGSize	disp			=	[self displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline];
+	CGSize	disp_at_bottom	=	CGSizeMake(disp.width + invisible_sz.width, disp.height + invisible_sz.height);
 	
 	return	disp_at_bottom;
 }
-- (void)setDisplacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline:(CGPoint)displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline
+- (void)setDisplacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline:(CGSize)displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline
 {
 	CGSize	invisible_sz	=	[self invisiblePortionSizeInBounds];
-	CGPoint	disp_at_bottom	=	displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline;
-	CGPoint	disp			=	CGPointMake(disp_at_bottom.x - invisible_sz.width, disp_at_bottom.y - invisible_sz.height);
+	CGSize	disp_at_bottom	=	displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline;
+	CGSize	disp			=	CGSizeMake(disp_at_bottom.width - invisible_sz.width, disp_at_bottom.height - invisible_sz.height);
 	
 	[self setDisplacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline:disp];
 }

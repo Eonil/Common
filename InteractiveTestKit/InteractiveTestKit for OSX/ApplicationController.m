@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "ApplicationController.h"
 #import <FoundationExtras/FoundationExtras.h>
 #import <AppKitSanitizer/AppKitSanitizer.h>
 
@@ -24,7 +24,7 @@
 
 
 
-@implementation AppDelegate
+@implementation ApplicationController
 {
 	AAAVC*		_aaa;
 	BBBWC*		_bbb;

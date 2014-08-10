@@ -11,7 +11,7 @@
 		45124156195E9FD900B6198A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45124154195E9FD900B6198A /* InfoPlist.strings */; };
 		45124158195E9FD900B6198A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124157195E9FD900B6198A /* main.m */; };
 		4512415C195E9FD900B6198A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4512415A195E9FD900B6198A /* Credits.rtf */; };
-		4512415F195E9FD900B6198A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4512415E195E9FD900B6198A /* AppDelegate.m */; };
+		4512415F195E9FD900B6198A /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4512415E195E9FD900B6198A /* ApplicationController.m */; };
 		45124162195E9FD900B6198A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45124160195E9FD900B6198A /* MainMenu.xib */; };
 		45124164195E9FD900B6198A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45124163195E9FD900B6198A /* Images.xcassets */; };
 		4512416B195E9FD900B6198A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512416A195E9FD900B6198A /* XCTest.framework */; };
@@ -24,7 +24,7 @@
 		4542F40419971DC300F95720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F40319971DC300F95720 /* CoreGraphics.framework */; };
 		4542F40C19971DC300F95720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4542F40A19971DC300F95720 /* InfoPlist.strings */; };
 		4542F40E19971DC300F95720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F40D19971DC300F95720 /* main.m */; };
-		4542F41219971DC300F95720 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F41119971DC300F95720 /* AppDelegate.m */; };
+		4542F41219971DC300F95720 /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F41119971DC300F95720 /* ApplicationController.m */; };
 		4542F41419971DC300F95720 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4542F41319971DC300F95720 /* Images.xcassets */; };
 		4542F41A19971DC400F95720 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512416A195E9FD900B6198A /* XCTest.framework */; };
 		4542F41B19971DC400F95720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F40119971DC300F95720 /* Foundation.framework */; };
@@ -32,8 +32,11 @@
 		4542F42419971DC400F95720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4542F42219971DC400F95720 /* InfoPlist.strings */; };
 		4542F42619971DC400F95720 /* DemonstrationTest_for_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F42519971DC400F95720 /* DemonstrationTest_for_iOSTests.m */; };
 		4542F4901997234D00F95720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F48F1997234D00F95720 /* UIKit.framework */; };
-		4542F4911997235300F95720 /* libFoundationExtras - iOS - Static Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F480199722F300F95720 /* libFoundationExtras - iOS - Static Library.a */; };
+		4542F4911997235300F95720 /* libFoundationExtras.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F480199722F300F95720 /* libFoundationExtras.a */; };
 		4542F4921997235900F95720 /* libUIKitSanitizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F466199722C900F95720 /* libUIKitSanitizer.a */; };
+		45B73C48199739D70080A6E3 /* TestMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C47199739D70080A6E3 /* TestMenuTableViewController.m */; };
+		45B73C5119973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5019973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m */; };
+		45B73C5419973B9B0080A6E3 /* TestItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5319973B9B0080A6E3 /* TestItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,46 +99,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		45124148195E9FD800B6198A /* DemonstrationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemonstrationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45124148195E9FD800B6198A /* InteractiveTestKit for OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InteractiveTestKit for OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4512414B195E9FD800B6198A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4512414E195E9FD800B6198A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4512414F195E9FD800B6198A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		45124150195E9FD800B6198A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		45124153195E9FD900B6198A /* DemonstrationTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemonstrationTest-Info.plist"; sourceTree = "<group>"; };
+		45124153195E9FD900B6198A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45124155195E9FD900B6198A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45124157195E9FD900B6198A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		45124159195E9FD900B6198A /* DemonstrationTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemonstrationTest-Prefix.pch"; sourceTree = "<group>"; };
+		45124159195E9FD900B6198A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		4512415B195E9FD900B6198A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4512415D195E9FD900B6198A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4512415E195E9FD900B6198A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4512415D195E9FD900B6198A /* ApplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
+		4512415E195E9FD900B6198A /* ApplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
 		45124161195E9FD900B6198A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45124163195E9FD900B6198A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		45124169195E9FD900B6198A /* DemonstrationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemonstrationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45124169195E9FD900B6198A /* InteractiveTestKit for OSX - Automatic Test Scenarios.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InteractiveTestKit for OSX - Automatic Test Scenarios.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4512416A195E9FD900B6198A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		45124171195E9FD900B6198A /* DemonstrationTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemonstrationTestTests-Info.plist"; sourceTree = "<group>"; };
+		45124171195E9FD900B6198A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45124173195E9FD900B6198A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45124175195E9FD900B6198A /* DemonstraionTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemonstraionTestTests.m; sourceTree = "<group>"; };
 		4512417F195E9FF000B6198A /* AppKitSanitizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKitSanitizer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Common-dnnqetmiddtmachdnrsjhqnjlcjz/Build/Products/Debug/AppKitSanitizer.framework"; sourceTree = "<group>"; };
 		45124180195E9FF000B6198A /* FoundationExtras.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoundationExtras.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Common-dnnqetmiddtmachdnrsjhqnjlcjz/Build/Products/Debug/FoundationExtras.framework"; sourceTree = "<group>"; };
-		4542F40019971DC300F95720 /* DemonstrationTest for iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DemonstrationTest for iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4542F40019971DC300F95720 /* InteractiveTestKit for iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InteractiveTestKit for iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4542F40119971DC300F95720 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4542F40319971DC300F95720 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4542F40519971DC300F95720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		4542F40919971DC300F95720 /* DemonstrationTest for iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemonstrationTest for iOS-Info.plist"; sourceTree = "<group>"; };
+		4542F40919971DC300F95720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4542F40B19971DC300F95720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4542F40D19971DC300F95720 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4542F40F19971DC300F95720 /* DemonstrationTest for iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemonstrationTest for iOS-Prefix.pch"; sourceTree = "<group>"; };
-		4542F41019971DC300F95720 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4542F41119971DC300F95720 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4542F40F19971DC300F95720 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		4542F41019971DC300F95720 /* ApplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
+		4542F41119971DC300F95720 /* ApplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
 		4542F41319971DC300F95720 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4542F41919971DC400F95720 /* DemonstrationTest for iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DemonstrationTest for iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4542F42119971DC400F95720 /* DemonstrationTest for iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemonstrationTest for iOSTests-Info.plist"; sourceTree = "<group>"; };
+		4542F41919971DC400F95720 /* InteractiveTestKit for iOS - Automatic Test Scenarios.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "InteractiveTestKit for iOS - Automatic Test Scenarios.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4542F42119971DC400F95720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4542F42319971DC400F95720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4542F42519971DC400F95720 /* DemonstrationTest_for_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemonstrationTest_for_iOSTests.m; sourceTree = "<group>"; };
 		4542F456199722C100F95720 /* AppKitSanitizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppKitSanitizer.xcodeproj; path = ../AppKitSanitizer/AppKitSanitizer.xcodeproj; sourceTree = "<group>"; };
 		4542F460199722C800F95720 /* UIKitSanitizer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKitSanitizer.xcodeproj; path = ../UIKitSanitizer/UIKitSanitizer.xcodeproj; sourceTree = "<group>"; };
 		4542F476199722F300F95720 /* FoundationExtras.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationExtras.xcodeproj; path = ../FoundationExtras/FoundationExtras.xcodeproj; sourceTree = "<group>"; };
 		4542F48F1997234D00F95720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		45B73C46199739D70080A6E3 /* TestMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMenuTableViewController.h; sourceTree = "<group>"; };
+		45B73C47199739D70080A6E3 /* TestMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMenuTableViewController.m; sourceTree = "<group>"; };
+		45B73C4F19973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.h"; sourceTree = "<group>"; };
+		45B73C5019973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m"; sourceTree = "<group>"; };
+		45B73C5219973B9B0080A6E3 /* TestItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestItemViewController.h; sourceTree = "<group>"; };
+		45B73C5319973B9B0080A6E3 /* TestItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4542F4921997235900F95720 /* libUIKitSanitizer.a in Frameworks */,
-				4542F4911997235300F95720 /* libFoundationExtras - iOS - Static Library.a in Frameworks */,
+				4542F4911997235300F95720 /* libFoundationExtras.a in Frameworks */,
 				4542F4901997234D00F95720 /* UIKit.framework in Frameworks */,
 				4542F40419971DC300F95720 /* CoreGraphics.framework in Frameworks */,
 				4542F40219971DC300F95720 /* Foundation.framework in Frameworks */,
@@ -189,10 +198,10 @@
 				4542F476199722F300F95720 /* FoundationExtras.xcodeproj */,
 				4542F456199722C100F95720 /* AppKitSanitizer.xcodeproj */,
 				4542F460199722C800F95720 /* UIKitSanitizer.xcodeproj */,
-				45124151195E9FD800B6198A /* DemonstraionTest */,
-				4512416F195E9FD900B6198A /* DemonstraionTestTests */,
-				4542F40719971DC300F95720 /* DemonstrationTest for iOS */,
-				4542F41F19971DC400F95720 /* DemonstrationTest for iOSTests */,
+				45124151195E9FD800B6198A /* InteractiveTestKit for OSX */,
+				4512416F195E9FD900B6198A /* InteractiveTestKit for OSX - Automatic Test Scenarios */,
+				4542F40719971DC300F95720 /* InteractiveTestKit for iOS */,
+				4542F41F19971DC400F95720 /* InteractiveTestKit for iOS - Automatic Test Scenarios */,
 				4512414A195E9FD800B6198A /* Frameworks */,
 				45124149195E9FD800B6198A /* Products */,
 			);
@@ -201,10 +210,10 @@
 		45124149195E9FD800B6198A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				45124148195E9FD800B6198A /* DemonstrationTest.app */,
-				45124169195E9FD900B6198A /* DemonstrationTestTests.xctest */,
-				4542F40019971DC300F95720 /* DemonstrationTest for iOS.app */,
-				4542F41919971DC400F95720 /* DemonstrationTest for iOSTests.xctest */,
+				45124148195E9FD800B6198A /* InteractiveTestKit for OSX.app */,
+				45124169195E9FD900B6198A /* InteractiveTestKit for OSX - Automatic Test Scenarios.xctest */,
+				4542F40019971DC300F95720 /* InteractiveTestKit for iOS.app */,
+				4542F41919971DC400F95720 /* InteractiveTestKit for iOS - Automatic Test Scenarios.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,83 +244,89 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		45124151195E9FD800B6198A /* DemonstraionTest */ = {
+		45124151195E9FD800B6198A /* InteractiveTestKit for OSX */ = {
 			isa = PBXGroup;
 			children = (
-				4512415D195E9FD900B6198A /* AppDelegate.h */,
-				4512415E195E9FD900B6198A /* AppDelegate.m */,
+				4512415D195E9FD900B6198A /* ApplicationController.h */,
+				4512415E195E9FD900B6198A /* ApplicationController.m */,
 				45124160195E9FD900B6198A /* MainMenu.xib */,
 				45124163195E9FD900B6198A /* Images.xcassets */,
 				45124152195E9FD900B6198A /* Supporting Files */,
 			);
-			path = DemonstraionTest;
+			path = "InteractiveTestKit for OSX";
 			sourceTree = "<group>";
 		};
 		45124152195E9FD900B6198A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				45124153195E9FD900B6198A /* DemonstrationTest-Info.plist */,
+				45124153195E9FD900B6198A /* Info.plist */,
 				45124154195E9FD900B6198A /* InfoPlist.strings */,
 				45124157195E9FD900B6198A /* main.m */,
-				45124159195E9FD900B6198A /* DemonstrationTest-Prefix.pch */,
+				45124159195E9FD900B6198A /* Prefix.pch */,
 				4512415A195E9FD900B6198A /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4512416F195E9FD900B6198A /* DemonstraionTestTests */ = {
+		4512416F195E9FD900B6198A /* InteractiveTestKit for OSX - Automatic Test Scenarios */ = {
 			isa = PBXGroup;
 			children = (
 				45124175195E9FD900B6198A /* DemonstraionTestTests.m */,
 				45124170195E9FD900B6198A /* Supporting Files */,
 			);
-			path = DemonstraionTestTests;
+			path = "InteractiveTestKit for OSX - Automatic Test Scenarios";
 			sourceTree = "<group>";
 		};
 		45124170195E9FD900B6198A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				45124171195E9FD900B6198A /* DemonstrationTestTests-Info.plist */,
+				45124171195E9FD900B6198A /* Info.plist */,
 				45124172195E9FD900B6198A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4542F40719971DC300F95720 /* DemonstrationTest for iOS */ = {
+		4542F40719971DC300F95720 /* InteractiveTestKit for iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4542F41019971DC300F95720 /* AppDelegate.h */,
-				4542F41119971DC300F95720 /* AppDelegate.m */,
+				4542F41019971DC300F95720 /* ApplicationController.h */,
+				4542F41119971DC300F95720 /* ApplicationController.m */,
+				45B73C46199739D70080A6E3 /* TestMenuTableViewController.h */,
+				45B73C47199739D70080A6E3 /* TestMenuTableViewController.m */,
+				45B73C5219973B9B0080A6E3 /* TestItemViewController.h */,
+				45B73C5319973B9B0080A6E3 /* TestItemViewController.m */,
+				45B73C4F19973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.h */,
+				45B73C5019973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m */,
 				4542F41319971DC300F95720 /* Images.xcassets */,
 				4542F40819971DC300F95720 /* Supporting Files */,
 			);
-			path = "DemonstrationTest for iOS";
+			path = "InteractiveTestKit for iOS";
 			sourceTree = "<group>";
 		};
 		4542F40819971DC300F95720 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4542F40919971DC300F95720 /* DemonstrationTest for iOS-Info.plist */,
+				4542F40919971DC300F95720 /* Info.plist */,
 				4542F40A19971DC300F95720 /* InfoPlist.strings */,
 				4542F40D19971DC300F95720 /* main.m */,
-				4542F40F19971DC300F95720 /* DemonstrationTest for iOS-Prefix.pch */,
+				4542F40F19971DC300F95720 /* Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4542F41F19971DC400F95720 /* DemonstrationTest for iOSTests */ = {
+		4542F41F19971DC400F95720 /* InteractiveTestKit for iOS - Automatic Test Scenarios */ = {
 			isa = PBXGroup;
 			children = (
 				4542F42519971DC400F95720 /* DemonstrationTest_for_iOSTests.m */,
 				4542F42019971DC400F95720 /* Supporting Files */,
 			);
-			path = "DemonstrationTest for iOSTests";
+			path = "InteractiveTestKit for iOS - Automatic Test Scenarios";
 			sourceTree = "<group>";
 		};
 		4542F42019971DC400F95720 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4542F42119971DC400F95720 /* DemonstrationTest for iOSTests-Info.plist */,
+				4542F42119971DC400F95720 /* Info.plist */,
 				4542F42219971DC400F95720 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -339,7 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				4542F47E199722F300F95720 /* FoundationExtras.framework */,
-				4542F480199722F300F95720 /* libFoundationExtras - iOS - Static Library.a */,
+				4542F480199722F300F95720 /* libFoundationExtras.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -347,9 +362,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		45124147195E9FD800B6198A /* DemonstrationTest */ = {
+		45124147195E9FD800B6198A /* InteractiveTestKit for OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45124179195E9FD900B6198A /* Build configuration list for PBXNativeTarget "DemonstrationTest" */;
+			buildConfigurationList = 45124179195E9FD900B6198A /* Build configuration list for PBXNativeTarget "InteractiveTestKit for OSX" */;
 			buildPhases = (
 				45124144195E9FD800B6198A /* Sources */,
 				45124145195E9FD800B6198A /* Frameworks */,
@@ -359,14 +374,14 @@
 			);
 			dependencies = (
 			);
-			name = DemonstrationTest;
+			name = "InteractiveTestKit for OSX";
 			productName = DemonstraionTest;
-			productReference = 45124148195E9FD800B6198A /* DemonstrationTest.app */;
+			productReference = 45124148195E9FD800B6198A /* InteractiveTestKit for OSX.app */;
 			productType = "com.apple.product-type.application";
 		};
-		45124168195E9FD900B6198A /* DemonstrationTestTests */ = {
+		45124168195E9FD900B6198A /* InteractiveTestKit for OSX - Automatic Test Scenarios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4512417C195E9FD900B6198A /* Build configuration list for PBXNativeTarget "DemonstrationTestTests" */;
+			buildConfigurationList = 4512417C195E9FD900B6198A /* Build configuration list for PBXNativeTarget "InteractiveTestKit for OSX - Automatic Test Scenarios" */;
 			buildPhases = (
 				45124165195E9FD900B6198A /* Sources */,
 				45124166195E9FD900B6198A /* Frameworks */,
@@ -377,14 +392,14 @@
 			dependencies = (
 				4512416E195E9FD900B6198A /* PBXTargetDependency */,
 			);
-			name = DemonstrationTestTests;
+			name = "InteractiveTestKit for OSX - Automatic Test Scenarios";
 			productName = DemonstraionTestTests;
-			productReference = 45124169195E9FD900B6198A /* DemonstrationTestTests.xctest */;
+			productReference = 45124169195E9FD900B6198A /* InteractiveTestKit for OSX - Automatic Test Scenarios.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4542F3FF19971DC300F95720 /* DemonstrationTest for iOS */ = {
+		4542F3FF19971DC300F95720 /* InteractiveTestKit for iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4542F42B19971DC400F95720 /* Build configuration list for PBXNativeTarget "DemonstrationTest for iOS" */;
+			buildConfigurationList = 4542F42B19971DC400F95720 /* Build configuration list for PBXNativeTarget "InteractiveTestKit for iOS" */;
 			buildPhases = (
 				4542F3FC19971DC300F95720 /* Sources */,
 				4542F3FD19971DC300F95720 /* Frameworks */,
@@ -394,14 +409,14 @@
 			);
 			dependencies = (
 			);
-			name = "DemonstrationTest for iOS";
+			name = "InteractiveTestKit for iOS";
 			productName = "DemonstrationTest for iOS";
-			productReference = 4542F40019971DC300F95720 /* DemonstrationTest for iOS.app */;
+			productReference = 4542F40019971DC300F95720 /* InteractiveTestKit for iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4542F41819971DC300F95720 /* DemonstrationTest for iOSTests */ = {
+		4542F41819971DC300F95720 /* InteractiveTestKit for iOS - Automatic Test Scenarios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4542F42C19971DC400F95720 /* Build configuration list for PBXNativeTarget "DemonstrationTest for iOSTests" */;
+			buildConfigurationList = 4542F42C19971DC400F95720 /* Build configuration list for PBXNativeTarget "InteractiveTestKit for iOS - Automatic Test Scenarios" */;
 			buildPhases = (
 				4542F41519971DC300F95720 /* Sources */,
 				4542F41619971DC300F95720 /* Frameworks */,
@@ -412,9 +427,9 @@
 			dependencies = (
 				4542F41E19971DC400F95720 /* PBXTargetDependency */,
 			);
-			name = "DemonstrationTest for iOSTests";
+			name = "InteractiveTestKit for iOS - Automatic Test Scenarios";
 			productName = "DemonstrationTest for iOSTests";
-			productReference = 4542F41919971DC400F95720 /* DemonstrationTest for iOSTests.xctest */;
+			productReference = 4542F41919971DC400F95720 /* InteractiveTestKit for iOS - Automatic Test Scenarios.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -434,7 +449,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 45124143195E9FD800B6198A /* Build configuration list for PBXProject "DemonstrationTest" */;
+			buildConfigurationList = 45124143195E9FD800B6198A /* Build configuration list for PBXProject "InteractiveTestKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -461,10 +476,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				45124147195E9FD800B6198A /* DemonstrationTest */,
-				45124168195E9FD900B6198A /* DemonstrationTestTests */,
-				4542F3FF19971DC300F95720 /* DemonstrationTest for iOS */,
-				4542F41819971DC300F95720 /* DemonstrationTest for iOSTests */,
+				45124147195E9FD800B6198A /* InteractiveTestKit for OSX */,
+				45124168195E9FD900B6198A /* InteractiveTestKit for OSX - Automatic Test Scenarios */,
+				4542F3FF19971DC300F95720 /* InteractiveTestKit for iOS */,
+				4542F41819971DC300F95720 /* InteractiveTestKit for iOS - Automatic Test Scenarios */,
 			);
 		};
 /* End PBXProject section */
@@ -505,10 +520,10 @@
 			remoteRef = 4542F47D199722F300F95720 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4542F480199722F300F95720 /* libFoundationExtras - iOS - Static Library.a */ = {
+		4542F480199722F300F95720 /* libFoundationExtras.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libFoundationExtras - iOS - Static Library.a";
+			path = libFoundationExtras.a;
 			remoteRef = 4542F47F199722F300F95720 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -558,7 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4512415F195E9FD900B6198A /* AppDelegate.m in Sources */,
+				4512415F195E9FD900B6198A /* ApplicationController.m in Sources */,
 				45124158195E9FD900B6198A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,8 +590,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4542F41219971DC300F95720 /* AppDelegate.m in Sources */,
+				45B73C48199739D70080A6E3 /* TestMenuTableViewController.m in Sources */,
+				45B73C5419973B9B0080A6E3 /* TestItemViewController.m in Sources */,
+				4542F41219971DC300F95720 /* ApplicationController.m in Sources */,
 				4542F40E19971DC300F95720 /* main.m in Sources */,
+				45B73C5119973B860080A6E3 /* Test____AutoresizingScrollViewByKeyboard_LongVersion____TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,12 +611,12 @@
 /* Begin PBXTargetDependency section */
 		4512416E195E9FD900B6198A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 45124147195E9FD800B6198A /* DemonstrationTest */;
+			target = 45124147195E9FD800B6198A /* InteractiveTestKit for OSX */;
 			targetProxy = 4512416D195E9FD900B6198A /* PBXContainerItemProxy */;
 		};
 		4542F41E19971DC400F95720 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4542F3FF19971DC300F95720 /* DemonstrationTest for iOS */;
+			target = 4542F3FF19971DC300F95720 /* InteractiveTestKit for iOS */;
 			targetProxy = 4542F41D19971DC400F95720 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -676,6 +694,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = $PRODUCT_NAME/Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -687,8 +706,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$SRCROOT\"/../FoundationExtras",
+					"\"$SRCROOT\"/../UIKitSanitizer",
+				);
+				INFOPLIST_FILE = $TARGET_NAME/Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = $TARGET_NAME;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -714,13 +742,23 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREFIX_HEADER = $PRODUCT_NAME/Prefix.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$SRCROOT\"/../FoundationExtras",
+					"\"$SRCROOT\"/../UIKitSanitizer",
+				);
+				INFOPLIST_FILE = $TARGET_NAME/Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = $TARGET_NAME;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -731,9 +769,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemonstraionTest/DemonstrationTest-Prefix.pch";
-				INFOPLIST_FILE = "DemonstraionTest/DemonstrationTest-Info.plist";
-				PRODUCT_NAME = DemonstrationTest;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -744,9 +779,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemonstraionTest/DemonstrationTest-Prefix.pch";
-				INFOPLIST_FILE = "DemonstraionTest/DemonstrationTest-Info.plist";
-				PRODUCT_NAME = DemonstrationTest;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -761,13 +793,11 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemonstraionTest/DemonstraionTest-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DemonstraionTestTests/DemonstrationTestTests-Info.plist";
-				PRODUCT_NAME = DemonstrationTestTests;
+				INFOPLIST_FILE = "DemonstraionTestTests/InteractiveTestKitTests-Info.plist";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -783,9 +813,7 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemonstraionTest/DemonstraionTest-Prefix.pch";
-				INFOPLIST_FILE = "DemonstraionTestTests/DemonstrationTestTests-Info.plist";
-				PRODUCT_NAME = DemonstrationTestTests;
+				INFOPLIST_FILE = "DemonstraionTestTests/InteractiveTestKitTests-Info.plist";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -802,14 +830,11 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemonstrationTest for iOS/DemonstrationTest for iOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DemonstrationTest for iOS/DemonstrationTest for iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -826,10 +851,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemonstrationTest for iOS/DemonstrationTest for iOS-Prefix.pch";
-				INFOPLIST_FILE = "DemonstrationTest for iOS/DemonstrationTest for iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -846,14 +868,11 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemonstrationTest for iOS/DemonstrationTest for iOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DemonstrationTest for iOSTests/DemonstrationTest for iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -870,10 +889,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemonstrationTest for iOS/DemonstrationTest for iOS-Prefix.pch";
-				INFOPLIST_FILE = "DemonstrationTest for iOSTests/DemonstrationTest for iOSTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALIDATE_PRODUCT = YES;
@@ -884,7 +900,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		45124143195E9FD800B6198A /* Build configuration list for PBXProject "DemonstrationTest" */ = {
+		45124143195E9FD800B6198A /* Build configuration list for PBXProject "InteractiveTestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				45124177195E9FD900B6198A /* Debug */,
@@ -893,7 +909,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45124179195E9FD900B6198A /* Build configuration list for PBXNativeTarget "DemonstrationTest" */ = {
+		45124179195E9FD900B6198A /* Build configuration list for PBXNativeTarget "InteractiveTestKit for OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4512417A195E9FD900B6198A /* Debug */,
@@ -902,7 +918,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4512417C195E9FD900B6198A /* Build configuration list for PBXNativeTarget "DemonstrationTestTests" */ = {
+		4512417C195E9FD900B6198A /* Build configuration list for PBXNativeTarget "InteractiveTestKit for OSX - Automatic Test Scenarios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4512417D195E9FD900B6198A /* Debug */,
@@ -911,7 +927,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4542F42B19971DC400F95720 /* Build configuration list for PBXNativeTarget "DemonstrationTest for iOS" */ = {
+		4542F42B19971DC400F95720 /* Build configuration list for PBXNativeTarget "InteractiveTestKit for iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4542F42719971DC400F95720 /* Debug */,
@@ -920,7 +936,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4542F42C19971DC400F95720 /* Build configuration list for PBXNativeTarget "DemonstrationTest for iOSTests" */ = {
+		4542F42C19971DC400F95720 /* Build configuration list for PBXNativeTarget "InteractiveTestKit for iOS - Automatic Test Scenarios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4542F42919971DC400F95720 /* Debug */,

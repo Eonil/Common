@@ -20,6 +20,10 @@
 		4542F3F719971CD800F95720 /* ExtraScrollViewMetricConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F119971C1700F95720 /* ExtraScrollViewMetricConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4542F3FA19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F819971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h */; };
 		4542F3FB19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */; };
+		4550FC681997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4550FC661997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h */; };
+		4550FC691997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4550FC671997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m */; };
+		45B73C5D199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B73C5B199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h */; };
+		45B73C5E199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5C199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		4542F3F219971C1700F95720 /* ExtraScrollViewMetricConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraScrollViewMetricConverter.m; sourceTree = "<group>"; };
 		4542F3F819971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraViewResizingByKeyboardPresentationController.h; sourceTree = "<group>"; };
 		4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraViewResizingByKeyboardPresentationController.m; sourceTree = "<group>"; };
+		4550FC661997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraScrollViewResizingByKeyboardPresentationController.h; sourceTree = "<group>"; };
+		4550FC671997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraScrollViewResizingByKeyboardPresentationController.m; sourceTree = "<group>"; };
+		45B73C5B199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraKeyboardPresentationNotificationController.h; sourceTree = "<group>"; };
+		45B73C5C199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraKeyboardPresentationNotificationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +119,12 @@
 				4542F3D519971BB800F95720 /* UIKitSanitizer.m */,
 				4542F3F119971C1700F95720 /* ExtraScrollViewMetricConverter.h */,
 				4542F3F219971C1700F95720 /* ExtraScrollViewMetricConverter.m */,
+				45B73C5B199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h */,
+				45B73C5C199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m */,
 				4542F3F819971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h */,
 				4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */,
+				4550FC661997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h */,
+				4550FC671997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m */,
 				4542F3D119971BB800F95720 /* Supporting Files */,
 			);
 			path = UIKitSanitizer;
@@ -151,9 +163,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4550FC681997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h in Headers */,
 				4542F3F619971CD800F95720 /* UIKitSanitizer.h in Headers */,
 				4542F3FA19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h in Headers */,
 				4542F3F719971CD800F95720 /* ExtraScrollViewMetricConverter.h in Headers */,
+				45B73C5D199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4542F3F319971C1700F95720 /* ExtraScrollViewMetricConverter.m in Sources */,
+				4550FC691997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m in Sources */,
 				4542F3D619971BB800F95720 /* UIKitSanitizer.m in Sources */,
 				4542F3FB19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */,
+				45B73C5E199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

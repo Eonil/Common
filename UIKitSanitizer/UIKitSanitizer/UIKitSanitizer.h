@@ -8,3 +8,4 @@
 
 #import "ExtraScrollViewMetricConverter.h"
 #import "ExtraViewResizingByKeyboardPresentationController.h"
+#import "ExtraScrollViewResizingByKeyboardPresentationController.h"

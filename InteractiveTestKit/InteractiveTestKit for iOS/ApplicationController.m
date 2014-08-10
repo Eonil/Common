@@ -6,16 +6,23 @@
 //  Copyright (c) 2014 Eonil. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "ApplicationController.h"
+#import "TestMenuTableViewController.h"
 
-@implementation AppDelegate
+@implementation ApplicationController
 
+@synthesize window	=	_window;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+	_window	=	[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [_window makeKeyAndVisible];
+	
+	UINavigationController*	nc1	=	[UINavigationController instantiation];
+	[_window setRootViewController:nc1];
+	
+	TestMenuTableViewController*	vc1	=	[TestMenuTableViewController instantiation];
+	[nc1 pushViewController:vc1 animated:NO];
+	
     return YES;
 }
 

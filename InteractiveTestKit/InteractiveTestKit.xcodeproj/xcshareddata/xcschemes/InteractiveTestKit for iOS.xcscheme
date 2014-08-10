@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45124147195E9FD800B6198A"
-               BuildableName = "DemonstrationTest.app"
-               BlueprintName = "DemonstrationTest"
-               ReferencedContainer = "container:DemonstrationTest.xcodeproj">
+               BlueprintIdentifier = "4542F3FF19971DC300F95720"
+               BuildableName = "InteractiveTestKit for iOS.app"
+               BlueprintName = "InteractiveTestKit for iOS"
+               ReferencedContainer = "container:InteractiveTestKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45124168195E9FD900B6198A"
-               BuildableName = "DemonstrationTestTests.xctest"
-               BlueprintName = "DemonstrationTestTests"
-               ReferencedContainer = "container:DemonstrationTest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "4542F41819971DC300F95720"
-               BuildableName = "DemonstrationTest for iOSTests.xctest"
-               BlueprintName = "DemonstrationTest for iOSTests"
-               ReferencedContainer = "container:DemonstrationTest.xcodeproj">
+               BuildableName = "InteractiveTestKit for iOS - Automatic Test Scenarios.xctest"
+               BlueprintName = "InteractiveTestKit for iOS - Automatic Test Scenarios"
+               ReferencedContainer = "container:InteractiveTestKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45124147195E9FD800B6198A"
-            BuildableName = "DemonstrationTest.app"
-            BlueprintName = "DemonstrationTest"
-            ReferencedContainer = "container:DemonstrationTest.xcodeproj">
+            BlueprintIdentifier = "4542F3FF19971DC300F95720"
+            BuildableName = "InteractiveTestKit for iOS.app"
+            BlueprintName = "InteractiveTestKit for iOS"
+            ReferencedContainer = "container:InteractiveTestKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -71,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45124147195E9FD800B6198A"
-            BuildableName = "DemonstrationTest.app"
-            BlueprintName = "DemonstrationTest"
-            ReferencedContainer = "container:DemonstrationTest.xcodeproj">
+            BlueprintIdentifier = "4542F3FF19971DC300F95720"
+            BuildableName = "InteractiveTestKit for iOS.app"
+            BlueprintName = "InteractiveTestKit for iOS"
+            ReferencedContainer = "container:InteractiveTestKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -89,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45124147195E9FD800B6198A"
-            BuildableName = "DemonstrationTest.app"
-            BlueprintName = "DemonstrationTest"
-            ReferencedContainer = "container:DemonstrationTest.xcodeproj">
+            BlueprintIdentifier = "4542F3FF19971DC300F95720"
+            BuildableName = "InteractiveTestKit for iOS.app"
+            BlueprintName = "InteractiveTestKit for iOS"
+            ReferencedContainer = "container:InteractiveTestKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

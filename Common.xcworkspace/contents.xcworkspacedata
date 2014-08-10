@@ -5,6 +5,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:LICENSE.md">
+   </FileRef>
+   <FileRef
       location = "group:CommonStuffsForC++/CommonStuffsForC++.xcodeproj">
    </FileRef>
    <FileRef
@@ -17,6 +20,6 @@
       location = "group:UIKitSanitizer/UIKitSanitizer.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:DemonstraionTest/DemonstrationTest.xcodeproj">
+      location = "group:InteractiveTestKit/InteractiveTestKit.xcodeproj">
    </FileRef>
 </Workspace>

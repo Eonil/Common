@@ -15,6 +15,6 @@
 @property	(readwrite,nonatomic,weak)		UIScrollView*		scrollView;
 @property	(readonly,nonatomic,assign)		CGSize				visiblePortionSizeInBounds;
 @property	(readonly,nonatomic,assign)		CGSize				invisiblePortionSizeInBounds;
-@property	(readwrite,nonatomic,assign)	CGPoint				displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline;
-@property	(readwrite,nonatomic,assign)	CGPoint				displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline;
+@property	(readwrite,nonatomic,assign)	CGSize				displacementOfContentTopLeftBorderlineAtBoundsTopLeftBorderline;
+@property	(readwrite,nonatomic,assign)	CGSize				displacementOfContentBottomRightBorderlineAtBoundsBottomRightBorderline;
 @end
