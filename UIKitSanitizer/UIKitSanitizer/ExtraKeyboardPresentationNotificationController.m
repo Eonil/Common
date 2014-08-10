@@ -44,7 +44,8 @@ analyze_keyboard_notification(NSNotification* notification)
 
 
 
-
+//#define LOG_EVENT()		NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification)
+#define	LOG_EVENT()
 
 @implementation ExtraKeyboardPresentationNotificationController
 
@@ -61,23 +62,33 @@ analyze_keyboard_notification(NSNotification* notification)
 
 - (void)ExtraKeyboardPresentationNotificationController____will_show:(NSNotification*)notification
 {
-//	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);
+	LOG_EVENT();
 	[[self delegate] notifyKeyboardWillShowWithParameters:analyze_keyboard_notification(notification)];
 }
 - (void)ExtraKeyboardPresentationNotificationController____did_show:(NSNotification*)notification
 {
-//	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);
+	LOG_EVENT();
 	[[self delegate] notifyKeyboardDidShowWithParameters:analyze_keyboard_notification(notification)];
 }
 - (void)ExtraKeyboardPresentationNotificationController____will_hide:(NSNotification*)notification
 {
-//	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);
+	LOG_EVENT();
 	[[self delegate] notifyKeyboardWillHideWithParameters:analyze_keyboard_notification(notification)];
 }
 - (void)ExtraKeyboardPresentationNotificationController____did_hide:(NSNotification*)notification
 {
-//	NSLog(@"%@, %@", NSStringFromSelector(_cmd), notification);
+	LOG_EVENT();
 	[[self delegate] notifyKeyboardDidHideWithParameters:analyze_keyboard_notification(notification)];
+}
+- (void)ExtraKeyboardPresentationNotificationController____will_change_frame:(NSNotification*)notification
+{
+	LOG_EVENT();
+	[[self delegate] notifyKeyboardWillChangeFrameWithParameters:analyze_keyboard_notification(notification)];
+}
+- (void)ExtraKeyboardPresentationNotificationController____did_change_frame:(NSNotification*)notification
+{
+	LOG_EVENT();
+	[[self delegate] notifyKeyboardDidChangeFrameWithParameters:analyze_keyboard_notification(notification)];
 }
 
 - (id)init
@@ -89,6 +100,8 @@ analyze_keyboard_notification(NSNotification* notification)
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ExtraKeyboardPresentationNotificationController____did_show:) name:UIKeyboardDidShowNotification object:nil];
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ExtraKeyboardPresentationNotificationController____will_hide:) name:UIKeyboardWillHideNotification object:nil];
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ExtraKeyboardPresentationNotificationController____did_hide:) name:UIKeyboardDidHideNotification object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ExtraKeyboardPresentationNotificationController____will_change_frame:) name:UIKeyboardWillChangeFrameNotification object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ExtraKeyboardPresentationNotificationController____did_change_frame:) name:UIKeyboardDidChangeFrameNotification object:nil];
 	}
 	return	self;
 }

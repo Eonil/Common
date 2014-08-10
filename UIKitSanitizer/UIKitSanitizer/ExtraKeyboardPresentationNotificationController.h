@@ -47,6 +47,8 @@ ExtraKeyboardPresentationParameters;
 - (void)	notifyKeyboardDidShowWithParameters:(ExtraKeyboardPresentationParameters)parameters;
 - (void)	notifyKeyboardWillHideWithParameters:(ExtraKeyboardPresentationParameters)parameters;
 - (void)	notifyKeyboardDidHideWithParameters:(ExtraKeyboardPresentationParameters)parameters;
+- (void)	notifyKeyboardWillChangeFrameWithParameters:(ExtraKeyboardPresentationParameters)parameters;
+- (void)	notifyKeyboardDidChangeFrameWithParameters:(ExtraKeyboardPresentationParameters)parameters;
 @end
 
 

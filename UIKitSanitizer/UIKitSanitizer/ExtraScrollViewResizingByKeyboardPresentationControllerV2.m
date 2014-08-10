@@ -256,7 +256,13 @@ analyze_view_animation_parameters(ExtraKeyboardPresentationParameters const keyb
 	
 	_kbd_is_dismissing	=	NO;
 }
-
+- (void)notifyKeyboardWillChangeFrameWithParameters:(ExtraKeyboardPresentationParameters)parameters
+{
+}
+- (void)notifyKeyboardDidChangeFrameWithParameters:(ExtraKeyboardPresentationParameters)parameters
+{
+	
+}
 
 
 

@@ -369,6 +369,14 @@ typedef ExtraScrollViewResizingByKeyboardPresentationController____animation_con
 {
 	
 }
+- (void)notifyKeyboardWillChangeFrameWithParameters:(ExtraKeyboardPresentationParameters)parameters
+{
+	
+}
+- (void)notifyKeyboardDidChangeFrameWithParameters:(ExtraKeyboardPresentationParameters)parameters
+{
+	
+}
 
 
 
