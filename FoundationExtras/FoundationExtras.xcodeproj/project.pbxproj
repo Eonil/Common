@@ -37,18 +37,6 @@
 		45FBA327197781D800A7A67E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45FBA326197781D800A7A67E /* README.md */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		45124119195E9F3400B6198A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		451240CA195E9E0400B6198A /* FoundationExtras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoundationExtras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		451240CD195E9E0400B6198A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -239,7 +227,6 @@
 			buildPhases = (
 				45124117195E9F3400B6198A /* Sources */,
 				45124118195E9F3400B6198A /* Frameworks */,
-				45124119195E9F3400B6198A /* CopyFiles */,
 			);
 			buildRules = (
 			);

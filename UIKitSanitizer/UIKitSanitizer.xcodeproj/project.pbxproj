@@ -16,17 +16,10 @@
 		4542F3E719971BB800F95720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4542F3E519971BB800F95720 /* InfoPlist.strings */; };
 		4542F3E919971BB800F95720 /* UIKitSanitizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3E819971BB800F95720 /* UIKitSanitizerTests.m */; };
 		4542F3F319971C1700F95720 /* ExtraScrollViewMetricConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F219971C1700F95720 /* ExtraScrollViewMetricConverter.m */; };
-		4542F3F619971CD800F95720 /* UIKitSanitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3D319971BB800F95720 /* UIKitSanitizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4542F3F719971CD800F95720 /* ExtraScrollViewMetricConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F119971C1700F95720 /* ExtraScrollViewMetricConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4542F3FA19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F819971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h */; };
 		4542F3FB19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */; };
-		4550FC681997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4550FC661997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h */; };
 		4550FC691997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4550FC671997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m */; };
-		455604AA1997D13300F3B588 /* ExtraKeyboardStickyPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 455604A81997D13300F3B588 /* ExtraKeyboardStickyPane.h */; };
 		455604AB1997D13300F3B588 /* ExtraKeyboardStickyPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 455604A91997D13300F3B588 /* ExtraKeyboardStickyPane.m */; };
-		45B73C5D199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B73C5B199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h */; };
 		45B73C5E199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5C199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m */; };
-		45B73C61199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B73C5F199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.h */; };
 		45B73C62199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C60199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m */; };
 /* End PBXBuildFile section */
 
@@ -170,23 +163,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		4542F3F519971CD000F95720 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45B73C61199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.h in Headers */,
-				4550FC681997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h in Headers */,
-				4542F3F619971CD800F95720 /* UIKitSanitizer.h in Headers */,
-				4542F3FA19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h in Headers */,
-				455604AA1997D13300F3B588 /* ExtraKeyboardStickyPane.h in Headers */,
-				4542F3F719971CD800F95720 /* ExtraScrollViewMetricConverter.h in Headers */,
-				45B73C5D199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		4542F3CD19971BB800F95720 /* UIKitSanitizer - iOS Static Library */ = {
 			isa = PBXNativeTarget;
@@ -194,7 +170,6 @@
 			buildPhases = (
 				4542F3CA19971BB800F95720 /* Sources */,
 				4542F3CB19971BB800F95720 /* Frameworks */,
-				4542F3F519971CD000F95720 /* Headers */,
 			);
 			buildRules = (
 			);
