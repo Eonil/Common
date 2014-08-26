@@ -48,7 +48,7 @@ UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_IN_ARRAY(NSArray* elements, BOOL(^test)(
 void
 UNIVERSE_DEBUG_RUN_FOR_EACH(id<NSFastEnumeration> collection, void(^block)(id element))
 {
-	if ([(id)collection conformsToProtocol:@protocol(NSFastEnumeration)])
+	if ([(id)collection conformsToProtocol:@protocol(NSFastEnumeration)] == NO)
 	{
 		[UniverseDoctor panicWithMessage:@"The supplied `collection` does not conform `NSFastEnumeration` protocol, and cannot be used with `UNIVERSE_DEBUG_RUN_FOR_EACH` macro."];
 	}

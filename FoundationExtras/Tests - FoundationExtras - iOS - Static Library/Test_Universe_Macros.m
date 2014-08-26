@@ -92,5 +92,48 @@
 	
 	XCTAssert(f1);
 }
+- (void)testMacro4
+{
+	NSArray*	a1	=	@
+	[
+		[NSObject new],
+	];
+	
+	////
+
+	@try
+	{
+		UNIVERSE_DEBUG_RUN_FOR_EACH(a1, ^(id element) {
+			UNIVERSE_DEBUG_ASSERT_PROTOCOL_CONFORMANCE(element, NSObject);
+		});
+	}
+	@catch (NSException* exc)
+	{
+		XCTFail();
+	}
+	
+	////
+	
+	BOOL	f1	=	NO;
+	@try
+	{
+		UNIVERSE_DEBUG_RUN_FOR_EACH(a1, ^(id element) {
+			UNIVERSE_DEBUG_ASSERT_PROTOCOL_CONFORMANCE(element, NSFastEnumeration);
+		});
+	}
+	@catch (NSException* exc)
+	{
+		f1	=	YES;
+	}
+	
+	XCTAssertTrue(f1);
+}
 
 @end
+
+
+
+
+
+
+
