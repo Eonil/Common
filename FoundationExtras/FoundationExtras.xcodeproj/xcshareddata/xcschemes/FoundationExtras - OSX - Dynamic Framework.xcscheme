@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "451240C9195E9E0400B6198A"
                BuildableName = "FoundationExtras.framework"
-               BlueprintName = "FoundationExtras"
+               BlueprintName = "FoundationExtras - OSX - Dynamic Framework"
                ReferencedContainer = "container:FoundationExtras.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "451240E0195E9E0400B6198A"
-               BuildableName = "FoundationExtrasTests.xctest"
-               BlueprintName = "FoundationExtrasTests"
-               ReferencedContainer = "container:FoundationExtras.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

@@ -38,6 +38,16 @@
                ReferencedContainer = "container:FoundationExtras.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "45E6B61B19AC79D70024A3DD"
+               BuildableName = "Tests - FoundationExtras - iOS - Static Library.xctest"
+               BlueprintName = "Tests - FoundationExtras - iOS - Static Library"
+               ReferencedContainer = "container:FoundationExtras.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
