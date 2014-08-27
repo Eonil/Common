@@ -100,16 +100,21 @@
 	];
 	
 	////
-
-	@try
 	{
-		UNIVERSE_DEBUG_RUN_FOR_EACH(a1, ^(id element) {
-			UNIVERSE_DEBUG_ASSERT_PROTOCOL_CONFORMANCE(element, NSObject);
-		});
-	}
-	@catch (NSException* exc)
-	{
-		XCTFail();
+		__block
+		NSUInteger	c1	=	0;
+		@try
+		{
+			UNIVERSE_DEBUG_RUN_FOR_EACH(a1, ^(id element) {
+				UNIVERSE_DEBUG_ASSERT_PROTOCOL_CONFORMANCE(element, NSObject);
+				c1++;
+			});
+		}
+		@catch (NSException* exc)
+		{
+			XCTFail();
+		}
+		XCTAssert(c1 == 1);
 	}
 	
 	////
