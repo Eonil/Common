@@ -67,7 +67,7 @@ void	UNIVERSE_DEBUG_ASSERT(BOOL cond);
 void	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(BOOL cond, NSString* message);
 #define	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(obj,type)			UNIVERSE_DEBUG_ASSERT([obj isKindOfClass:[type class]])
 #define	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL(obj,type)	UNIVERSE_DEBUG_ASSERT([obj isKindOfClass:[type class]] || obj == nil)
-#define	UNIVERSE_DEBUG_ASSERT_PROTOCOL_CONFORMANCE(obj,pro)	UNIVERSE_DEBUG_ASSERT([(obj) conformsToProtocol:@protocol(pro)])
+#define	UNIVERSE_DEBUG_ASSERT_PROTOCOL_CONFORMANCE(obj,pro)	UNIVERSE_DEBUG_ASSERT([(id)(obj) conformsToProtocol:@protocol(pro)])
 void	UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_IN_ARRAY(NSArray* elements, BOOL(^test)(id element));																							///<	Will be deprecated. Use UNIVERSE_DEBUG_RUN_FOR_EACH macro insted of.
 #define	UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_TYPE_IN_ARRAY(arr,type)	UNIVERSE_DEBUG_ASSERT_FOR_EACH_ELEMENTS_IN_ARRAY((arr), ^(id e){ return [e isKindOfClass:[type class]]; });				///<	Will be deprecated. Use UNIVERSE_DEBUG_RUN_FOR_EACH macro insted of.
 void	UNIVERSE_DEBUG_RUN_FOR_EACH(id collection, void(^block)(id element));		///<	Runs the block for all each elements in the collection only in debug build.
