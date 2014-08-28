@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "450AC2531949AB1B005B7904"
                BuildableName = "AppKitSanitizer.framework"
-               BlueprintName = "AppKitSanitizer"
+               BlueprintName = "AppKitSanitizer - OSX - Dynamic Framework"
                ReferencedContainer = "container:AppKitSanitizer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -49,6 +49,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "450AC2531949AB1B005B7904"
+            BuildableName = "AppKitSanitizer.framework"
+            BlueprintName = "AppKitSanitizer - OSX - Dynamic Framework"
+            ReferencedContainer = "container:AppKitSanitizer.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
