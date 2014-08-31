@@ -102,7 +102,7 @@
 		4512412C195E9F3400B6198A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		453BD0E819AD820D00DCAA27 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
 		45ACCC7219B37740001FB424 /* libFoundationExtras.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationExtras.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		45ACCC7E19B37740001FB424 /* FoundationExtras - OSX Static LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoundationExtras - OSX Static LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ACCC7E19B37740001FB424 /* FoundationExtras - OSX - Static Library - Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoundationExtras - OSX - Static Library - Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6B61C19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests - FoundationExtras - iOS - Static Library.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6B62219AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests - FoundationExtras - iOS - Static Library-Info.plist"; sourceTree = "<group>"; };
 		45E6B62419AC79D70024A3DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 				4512411B195E9F3400B6198A /* libFoundationExtras.a */,
 				45E6B61C19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library.xctest */,
 				45ACCC7219B37740001FB424 /* libFoundationExtras.a */,
-				45ACCC7E19B37740001FB424 /* FoundationExtras - OSX Static LibraryTests.xctest */,
+				45ACCC7E19B37740001FB424 /* FoundationExtras - OSX - Static Library - Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,7 +344,7 @@
 			);
 			name = "FoundationExtras - OSX - Static Library - Tests";
 			productName = "FoundationExtras - OSX Static LibraryTests";
-			productReference = 45ACCC7E19B37740001FB424 /* FoundationExtras - OSX Static LibraryTests.xctest */;
+			productReference = 45ACCC7E19B37740001FB424 /* FoundationExtras - OSX - Static Library - Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		45E6B61B19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library */ = {
@@ -805,6 +805,7 @@
 				45ACCC8D19B37741001FB424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45ACCC9119B37741001FB424 /* Build configuration list for PBXNativeTarget "FoundationExtras - OSX - Static Library - Tests" */ = {
 			isa = XCConfigurationList;
@@ -813,6 +814,7 @@
 				45ACCC8F19B37741001FB424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45E6B62D19AC79D70024A3DD /* Build configuration list for PBXNativeTarget "Tests - FoundationExtras - iOS - Static Library" */ = {
 			isa = XCConfigurationList;
