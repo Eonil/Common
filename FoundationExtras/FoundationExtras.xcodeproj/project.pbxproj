@@ -35,6 +35,17 @@
 		45124195195EA11300B6198A /* StringUtil1.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FF195E9E2800B6198A /* StringUtil1.m */; };
 		453BD0E919AD820D00DCAA27 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 453BD0E819AD820D00DCAA27 /* CHANGELOG.md */; };
 		457A757719ACA5DD0089F2F6 /* libFoundationExtras.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512411B195E9F3400B6198A /* libFoundationExtras.a */; };
+		45ACCC7F19B37740001FB424 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451240E2195E9E0400B6198A /* XCTest.framework */; };
+		45ACCC8019B37740001FB424 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451240CD195E9E0400B6198A /* Cocoa.framework */; };
+		45ACCC8319B37740001FB424 /* libFoundationExtras.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ACCC7219B37740001FB424 /* libFoundationExtras.a */; };
+		45ACCC9219B37927001FB424 /* FoundationExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240DB195E9E0400B6198A /* FoundationExtras.m */; };
+		45ACCC9319B37927001FB424 /* All.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240F9195E9E2800B6198A /* All.m */; };
+		45ACCC9419B37927001FB424 /* UniverseCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124101195E9E2800B6198A /* UniverseCommon.m */; };
+		45ACCC9519B37927001FB424 /* UniverseDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124103195E9E2800B6198A /* UniverseDoctor.m */; };
+		45ACCC9619B37927001FB424 /* BasicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FB195E9E2800B6198A /* BasicObject.m */; };
+		45ACCC9719B37927001FB424 /* NSObject+Universe.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FD195E9E2800B6198A /* NSObject+Universe.m */; };
+		45ACCC9819B37927001FB424 /* StringUtil1.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FF195E9E2800B6198A /* StringUtil1.m */; };
+		45ACCC9919B37927001FB424 /* URLList.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124105195E9E2800B6198A /* URLList.m */; };
 		45E6B61D19AC79D70024A3DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451240E2195E9E0400B6198A /* XCTest.framework */; };
 		45E6B61E19AC79D70024A3DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512411C195E9F3400B6198A /* Foundation.framework */; };
 		45E6B61F19AC79D70024A3DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512412C195E9F3400B6198A /* UIKit.framework */; };
@@ -43,6 +54,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		45ACCC8119B37740001FB424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451240C1195E9E0400B6198A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45ACCC7119B37740001FB424;
+			remoteInfo = "FoundationExtras - OSX Static Library";
+		};
 		45E6B62919AC79D70024A3DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 451240C1195E9E0400B6198A /* Project object */;
@@ -83,6 +101,8 @@
 		45124120195E9F3400B6198A /* FoundationExtras - iOS - Static Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoundationExtras - iOS - Static Library-Prefix.pch"; sourceTree = "<group>"; };
 		4512412C195E9F3400B6198A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		453BD0E819AD820D00DCAA27 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		45ACCC7219B37740001FB424 /* libFoundationExtras.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationExtras.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		45ACCC7E19B37740001FB424 /* FoundationExtras - OSX Static LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoundationExtras - OSX Static LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6B61C19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests - FoundationExtras - iOS - Static Library.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6B62219AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests - FoundationExtras - iOS - Static Library-Info.plist"; sourceTree = "<group>"; };
 		45E6B62419AC79D70024A3DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -97,6 +117,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				451240CE195E9E0400B6198A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45ACCC7B19B37740001FB424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45ACCC8019B37740001FB424 /* Cocoa.framework in Frameworks */,
+				45ACCC8319B37740001FB424 /* libFoundationExtras.a in Frameworks */,
+				45ACCC7F19B37740001FB424 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +163,8 @@
 				451240CA195E9E0400B6198A /* FoundationExtras.framework */,
 				4512411B195E9F3400B6198A /* libFoundationExtras.a */,
 				45E6B61C19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library.xctest */,
+				45ACCC7219B37740001FB424 /* libFoundationExtras.a */,
+				45ACCC7E19B37740001FB424 /* FoundationExtras - OSX Static LibraryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,6 +314,39 @@
 			productReference = 4512411B195E9F3400B6198A /* libFoundationExtras.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		45ACCC7119B37740001FB424 /* FoundationExtras - OSX - Static Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45ACCC9019B37741001FB424 /* Build configuration list for PBXNativeTarget "FoundationExtras - OSX - Static Library" */;
+			buildPhases = (
+				45ACCC6E19B37740001FB424 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FoundationExtras - OSX - Static Library";
+			productName = "FoundationExtras - OSX Static Library";
+			productReference = 45ACCC7219B37740001FB424 /* libFoundationExtras.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		45ACCC7D19B37740001FB424 /* FoundationExtras - OSX - Static Library - Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45ACCC9119B37741001FB424 /* Build configuration list for PBXNativeTarget "FoundationExtras - OSX - Static Library - Tests" */;
+			buildPhases = (
+				45ACCC7A19B37740001FB424 /* Sources */,
+				45ACCC7B19B37740001FB424 /* Frameworks */,
+				45ACCC7C19B37740001FB424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45ACCC8219B37740001FB424 /* PBXTargetDependency */,
+			);
+			name = "FoundationExtras - OSX - Static Library - Tests";
+			productName = "FoundationExtras - OSX Static LibraryTests";
+			productReference = 45ACCC7E19B37740001FB424 /* FoundationExtras - OSX Static LibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		45E6B61B19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45E6B62D19AC79D70024A3DD /* Build configuration list for PBXNativeTarget "Tests - FoundationExtras - iOS - Static Library" */;
@@ -309,8 +374,11 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Eonil;
 				TargetAttributes = {
+					45ACCC7D19B37740001FB424 = {
+						TestTargetID = 451240C9195E9E0400B6198A;
+					};
 					45E6B61B19AC79D70024A3DD = {
-						TestTargetID = 4512411A195E9F3400B6198A;
+						TestTargetID = 451240C9195E9E0400B6198A;
 					};
 				};
 			};
@@ -329,6 +397,8 @@
 				451240C9195E9E0400B6198A /* FoundationExtras - OSX - Dynamic Framework */,
 				4512411A195E9F3400B6198A /* FoundationExtras - iOS - Static Library */,
 				45E6B61B19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library */,
+				45ACCC7119B37740001FB424 /* FoundationExtras - OSX - Static Library */,
+				45ACCC7D19B37740001FB424 /* FoundationExtras - OSX - Static Library - Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,6 +410,13 @@
 			files = (
 				451240D8195E9E0400B6198A /* InfoPlist.strings in Resources */,
 				453BD0E919AD820D00DCAA27 /* CHANGELOG.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45ACCC7C19B37740001FB424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +461,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45ACCC6E19B37740001FB424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45ACCC9219B37927001FB424 /* FoundationExtras.m in Sources */,
+				45ACCC9319B37927001FB424 /* All.m in Sources */,
+				45ACCC9419B37927001FB424 /* UniverseCommon.m in Sources */,
+				45ACCC9519B37927001FB424 /* UniverseDoctor.m in Sources */,
+				45ACCC9619B37927001FB424 /* BasicObject.m in Sources */,
+				45ACCC9719B37927001FB424 /* NSObject+Universe.m in Sources */,
+				45ACCC9819B37927001FB424 /* StringUtil1.m in Sources */,
+				45ACCC9919B37927001FB424 /* URLList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45ACCC7A19B37740001FB424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45E6B61819AC79D70024A3DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,6 +494,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		45ACCC8219B37740001FB424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45ACCC7119B37740001FB424 /* FoundationExtras - OSX - Static Library */;
+			targetProxy = 45ACCC8119B37740001FB424 /* PBXContainerItemProxy */;
+		};
 		45E6B62A19AC79D70024A3DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4512411A195E9F3400B6198A /* FoundationExtras - iOS - Static Library */;
@@ -540,8 +644,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = "/tmp/FoundationExtras___iOS___Static_Library.dst";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FoundationExtras - iOS - Static Library/FoundationExtras - iOS - Static Library-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -557,8 +659,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = "/tmp/FoundationExtras___iOS___Static_Library.dst";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FoundationExtras - iOS - Static Library/FoundationExtras - iOS - Static Library-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -567,9 +667,66 @@
 			};
 			name = Release;
 		};
+		45ACCC8C19B37741001FB424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		45ACCC8D19B37741001FB424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		45ACCC8E19B37741001FB424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoundationExtras.framework/Versions/A/FoundationExtras";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoundationExtras - OSX Static Library/FoundationExtras - OSX Static Library-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FoundationExtras - OSX Static LibraryTests/FoundationExtras - OSX Static LibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		45ACCC8F19B37741001FB424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoundationExtras.framework/Versions/A/FoundationExtras";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoundationExtras - OSX Static Library/FoundationExtras - OSX Static Library-Prefix.pch";
+				INFOPLIST_FILE = "FoundationExtras - OSX Static LibraryTests/FoundationExtras - OSX Static LibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		45E6B62B19AC79D70024A3DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoundationExtras.framework/Versions/A/FoundationExtras";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -585,6 +742,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -592,6 +750,7 @@
 		45E6B62C19AC79D70024A3DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoundationExtras.framework/Versions/A/FoundationExtras";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -603,6 +762,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -637,6 +797,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		45ACCC9019B37741001FB424 /* Build configuration list for PBXNativeTarget "FoundationExtras - OSX - Static Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45ACCC8C19B37741001FB424 /* Debug */,
+				45ACCC8D19B37741001FB424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		45ACCC9119B37741001FB424 /* Build configuration list for PBXNativeTarget "FoundationExtras - OSX - Static Library - Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45ACCC8E19B37741001FB424 /* Debug */,
+				45ACCC8F19B37741001FB424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		45E6B62D19AC79D70024A3DD /* Build configuration list for PBXNativeTarget "Tests - FoundationExtras - iOS - Static Library" */ = {
 			isa = XCConfigurationList;
