@@ -36,6 +36,30 @@
 		45124195195EA11300B6198A /* StringUtil1.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FF195E9E2800B6198A /* StringUtil1.m */; };
 		453BD0E919AD820D00DCAA27 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 453BD0E819AD820D00DCAA27 /* CHANGELOG.md */; };
 		457A757719ACA5DD0089F2F6 /* libFoundationExtras.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4512411B195E9F3400B6198A /* libFoundationExtras.a */; };
+		458ED42019C21DAF0044BA55 /* FoundationExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240DB195E9E0400B6198A /* FoundationExtras.m */; };
+		458ED42119C21DAF0044BA55 /* All.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240F9195E9E2800B6198A /* All.m */; };
+		458ED42219C21DAF0044BA55 /* UniverseCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124101195E9E2800B6198A /* UniverseCommon.m */; };
+		458ED42319C21DAF0044BA55 /* UniverseDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124103195E9E2800B6198A /* UniverseDoctor.m */; };
+		458ED42419C21DAF0044BA55 /* BasicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FB195E9E2800B6198A /* BasicObject.m */; };
+		458ED42519C21DAF0044BA55 /* NSObject+Universe.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FD195E9E2800B6198A /* NSObject+Universe.m */; };
+		458ED42619C21DAF0044BA55 /* StringUtil1.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FF195E9E2800B6198A /* StringUtil1.m */; };
+		458ED42719C21DAF0044BA55 /* URLList.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124105195E9E2800B6198A /* URLList.m */; };
+		458ED42819C21DAF0044BA55 /* FoundationExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240DB195E9E0400B6198A /* FoundationExtras.m */; };
+		458ED42919C21DAF0044BA55 /* All.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240F9195E9E2800B6198A /* All.m */; };
+		458ED42A19C21DAF0044BA55 /* UniverseCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124101195E9E2800B6198A /* UniverseCommon.m */; };
+		458ED42B19C21DAF0044BA55 /* UniverseDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124103195E9E2800B6198A /* UniverseDoctor.m */; };
+		458ED42C19C21DAF0044BA55 /* BasicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FB195E9E2800B6198A /* BasicObject.m */; };
+		458ED42D19C21DAF0044BA55 /* NSObject+Universe.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FD195E9E2800B6198A /* NSObject+Universe.m */; };
+		458ED42E19C21DAF0044BA55 /* StringUtil1.m in Sources */ = {isa = PBXBuildFile; fileRef = 451240FF195E9E2800B6198A /* StringUtil1.m */; };
+		458ED42F19C21DAF0044BA55 /* URLList.m in Sources */ = {isa = PBXBuildFile; fileRef = 45124105195E9E2800B6198A /* URLList.m */; };
+		458ED43019C21DC40044BA55 /* FoundationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 451240DA195E9E0400B6198A /* FoundationExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458ED43119C21DC40044BA55 /* UniverseDoctor.h in Headers */ = {isa = PBXBuildFile; fileRef = 45124102195E9E2800B6198A /* UniverseDoctor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458ED43219C21DC40044BA55 /* BasicObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 451240FA195E9E2800B6198A /* BasicObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458ED43319C21DC40044BA55 /* UniverseCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 45124100195E9E2800B6198A /* UniverseCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458ED43419C21DC40044BA55 /* All.h in Headers */ = {isa = PBXBuildFile; fileRef = 451240F8195E9E2800B6198A /* All.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458ED43519C21DC40044BA55 /* NSObject+Universe.h in Headers */ = {isa = PBXBuildFile; fileRef = 451240FC195E9E2800B6198A /* NSObject+Universe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458ED43619C21DC40044BA55 /* URLList.h in Headers */ = {isa = PBXBuildFile; fileRef = 45124104195E9E2800B6198A /* URLList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458ED43719C21DC80044BA55 /* StringUtil1.h in Headers */ = {isa = PBXBuildFile; fileRef = 451240FE195E9E2800B6198A /* StringUtil1.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		45ACCC7F19B37740001FB424 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451240E2195E9E0400B6198A /* XCTest.framework */; };
 		45ACCC8019B37740001FB424 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451240CD195E9E0400B6198A /* Cocoa.framework */; };
 		45ACCC8319B37740001FB424 /* libFoundationExtras.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ACCC7219B37740001FB424 /* libFoundationExtras.a */; };
@@ -114,6 +138,8 @@
 		45124120195E9F3400B6198A /* FoundationExtras - iOS - Static Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoundationExtras - iOS - Static Library-Prefix.pch"; sourceTree = "<group>"; };
 		4512412C195E9F3400B6198A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		453BD0E819AD820D00DCAA27 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		458ED40A19C21D830044BA55 /* FoundationExtras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoundationExtras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		458ED40D19C21D830044BA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45ACCC7219B37740001FB424 /* libFoundationExtras.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationExtras.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		45ACCC7E19B37740001FB424 /* FoundationExtras - OSX - Static Library - Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoundationExtras - OSX - Static Library - Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6B61C19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests - FoundationExtras - iOS - Static Library.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				451240CE195E9E0400B6198A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458ED40619C21D830044BA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +241,7 @@
 				45E6B62019AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library */,
 				450A2BC219C0BAE4009D55B5 /* FoundationExtras - iOS - Static Framework */,
 				450A2BCC19C0BAE4009D55B5 /* FoundationExtras - iOS - Static FrameworkTests */,
+				458ED40B19C21D830044BA55 /* FoundationExtras - iOS - Dynamic Framework */,
 				451240CC195E9E0400B6198A /* Frameworks */,
 				451240CB195E9E0400B6198A /* Products */,
 			);
@@ -222,6 +256,7 @@
 				45ACCC7219B37740001FB424 /* libFoundationExtras.a */,
 				45ACCC7E19B37740001FB424 /* FoundationExtras - OSX - Static Library - Tests.xctest */,
 				450A2BC119C0BAE4009D55B5 /* FoundationExtras.framework */,
+				458ED40A19C21D830044BA55 /* FoundationExtras.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,6 +333,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		458ED40B19C21D830044BA55 /* FoundationExtras - iOS - Dynamic Framework */ = {
+			isa = PBXGroup;
+			children = (
+				458ED40C19C21D830044BA55 /* Supporting Files */,
+			);
+			path = "FoundationExtras - iOS - Dynamic Framework";
+			sourceTree = "<group>";
+		};
+		458ED40C19C21D830044BA55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				458ED40D19C21D830044BA55 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		45E6B62019AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +398,21 @@
 				4512410A195E9E2800B6198A /* NSObject+Universe.h in Headers */,
 				45124112195E9E2800B6198A /* URLList.h in Headers */,
 				4512410C195E9E2800B6198A /* StringUtil1.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458ED40719C21D830044BA55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458ED43319C21DC40044BA55 /* UniverseCommon.h in Headers */,
+				458ED43719C21DC80044BA55 /* StringUtil1.h in Headers */,
+				458ED43419C21DC40044BA55 /* All.h in Headers */,
+				458ED43619C21DC40044BA55 /* URLList.h in Headers */,
+				458ED43119C21DC40044BA55 /* UniverseDoctor.h in Headers */,
+				458ED43219C21DC40044BA55 /* BasicObject.h in Headers */,
+				458ED43019C21DC40044BA55 /* FoundationExtras.h in Headers */,
+				458ED43519C21DC40044BA55 /* NSObject+Universe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +469,24 @@
 			productName = "FoundationExtras - iOS - Static Library";
 			productReference = 4512411B195E9F3400B6198A /* libFoundationExtras.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		458ED40919C21D830044BA55 /* FoundationExtras - iOS - Dynamic Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458ED41E19C21D830044BA55 /* Build configuration list for PBXNativeTarget "FoundationExtras - iOS - Dynamic Framework" */;
+			buildPhases = (
+				458ED40519C21D830044BA55 /* Sources */,
+				458ED40619C21D830044BA55 /* Frameworks */,
+				458ED40719C21D830044BA55 /* Headers */,
+				458ED40819C21D830044BA55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FoundationExtras - iOS - Dynamic Framework";
+			productName = "FoundationExtras - iOS - Dynamic Framework";
+			productReference = 458ED40A19C21D830044BA55 /* FoundationExtras.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		45ACCC7119B37740001FB424 /* FoundationExtras - OSX - Static Library */ = {
 			isa = PBXNativeTarget;
@@ -467,6 +551,9 @@
 					450A2BC019C0BAE4009D55B5 = {
 						CreatedOnToolsVersion = 6.0;
 					};
+					458ED40919C21D830044BA55 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 					45ACCC7D19B37740001FB424 = {
 						TestTargetID = 451240C9195E9E0400B6198A;
 					};
@@ -493,6 +580,7 @@
 				4512411A195E9F3400B6198A /* FoundationExtras - iOS - Static Library */,
 				45E6B61B19AC79D70024A3DD /* Tests - FoundationExtras - iOS - Static Library */,
 				450A2BC019C0BAE4009D55B5 /* FoundationExtras - iOS - Static Framework */,
+				458ED40919C21D830044BA55 /* FoundationExtras - iOS - Dynamic Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -511,6 +599,13 @@
 			files = (
 				451240D8195E9E0400B6198A /* InfoPlist.strings in Resources */,
 				453BD0E919AD820D00DCAA27 /* CHANGELOG.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458ED40819C21D830044BA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +631,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458ED42419C21DAF0044BA55 /* BasicObject.m in Sources */,
+				458ED42219C21DAF0044BA55 /* UniverseCommon.m in Sources */,
+				458ED42519C21DAF0044BA55 /* NSObject+Universe.m in Sources */,
+				458ED42719C21DAF0044BA55 /* URLList.m in Sources */,
+				458ED42019C21DAF0044BA55 /* FoundationExtras.m in Sources */,
+				458ED42119C21DAF0044BA55 /* All.m in Sources */,
+				458ED42319C21DAF0044BA55 /* UniverseDoctor.m in Sources */,
+				458ED42619C21DAF0044BA55 /* StringUtil1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +669,21 @@
 				4512418F195EA11300B6198A /* FoundationExtras.m in Sources */,
 				45124195195EA11300B6198A /* StringUtil1.m in Sources */,
 				45124194195EA11300B6198A /* NSObject+Universe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458ED40519C21D830044BA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458ED42C19C21DAF0044BA55 /* BasicObject.m in Sources */,
+				458ED42A19C21DAF0044BA55 /* UniverseCommon.m in Sources */,
+				458ED42D19C21DAF0044BA55 /* NSObject+Universe.m in Sources */,
+				458ED42F19C21DAF0044BA55 /* URLList.m in Sources */,
+				458ED42819C21DAF0044BA55 /* FoundationExtras.m in Sources */,
+				458ED42919C21DAF0044BA55 /* All.m in Sources */,
+				458ED42B19C21DAF0044BA55 /* UniverseDoctor.m in Sources */,
+				458ED42E19C21DAF0044BA55 /* StringUtil1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +771,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -677,6 +796,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -834,6 +954,59 @@
 			};
 			name = Release;
 		};
+		458ED41A19C21D830044BA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FoundationExtras - iOS - Dynamic Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		458ED41B19C21D830044BA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "FoundationExtras - iOS - Dynamic Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		45ACCC8C19B37741001FB424 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -975,6 +1148,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		458ED41E19C21D830044BA55 /* Build configuration list for PBXNativeTarget "FoundationExtras - iOS - Dynamic Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458ED41A19C21D830044BA55 /* Debug */,
+				458ED41B19C21D830044BA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		45ACCC9019B37741001FB424 /* Build configuration list for PBXNativeTarget "FoundationExtras - OSX - Static Library" */ = {
 			isa = XCConfigurationList;

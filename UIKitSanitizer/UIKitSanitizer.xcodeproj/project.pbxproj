@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		450A2BFC19C0BC7D009D55B5 /* libUIKitSanitizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F3CE19971BB800F95720 /* libUIKitSanitizer.a */; };
-		4542F3CF19971BB800F95720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F37319971B5E00F95720 /* Foundation.framework */; };
+		450B573619C2200900B08BFB /* FoundationExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458ED3FE19C21D5E0044BA55 /* FoundationExtras.framework */; };
 		4542F3D619971BB800F95720 /* UIKitSanitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3D519971BB800F95720 /* UIKitSanitizer.m */; };
 		4542F3DC19971BB800F95720 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F38C19971B5E00F95720 /* XCTest.framework */; };
 		4542F3DD19971BB800F95720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F37319971B5E00F95720 /* Foundation.framework */; };
@@ -20,7 +19,13 @@
 		4542F3FB19971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */; };
 		4550FC691997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4550FC671997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m */; };
 		455604AB1997D13300F3B588 /* ExtraKeyboardStickyPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 455604A91997D13300F3B588 /* ExtraKeyboardStickyPane.m */; };
-		458B15E019C0BF9C005C2700 /* FoundationExtras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458B15DF19C0BF9C005C2700 /* FoundationExtras.framework */; };
+		458ED43C19C21E0D0044BA55 /* ExtraScrollViewMetricConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F219971C1700F95720 /* ExtraScrollViewMetricConverter.m */; };
+		458ED43D19C21E0D0044BA55 /* ExtraScrollViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4550FC671997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m */; };
+		458ED43E19C21E0D0044BA55 /* UIKitSanitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3D519971BB800F95720 /* UIKitSanitizer.m */; };
+		458ED43F19C21E0D0044BA55 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C60199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m */; };
+		458ED44019C21E0D0044BA55 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */; };
+		458ED44119C21E0D0044BA55 /* ExtraKeyboardStickyPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 455604A91997D13300F3B588 /* ExtraKeyboardStickyPane.m */; };
+		458ED44219C21E0D0044BA55 /* ExtraKeyboardPresentationNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5C199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m */; };
 		45AF1C9E19C0C55600151509 /* UIKitSanitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3D319971BB800F95720 /* UIKitSanitizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45AF1C9F19C0C55600151509 /* ExtraScrollViewMetricConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F119971C1700F95720 /* ExtraScrollViewMetricConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45AF1CA019C0C55600151509 /* ExtraKeyboardPresentationNotificationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B73C5B199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,15 +35,86 @@
 		45AF1CA419C0C55600151509 /* ExtraKeyboardStickyPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 455604A81997D13300F3B588 /* ExtraKeyboardStickyPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45B73C5E199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5C199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m */; };
 		45B73C62199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C60199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m */; };
+		45CA280F19C21F7D00557F48 /* ExtraScrollViewResizingByKeyboardPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4550FC661997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CA281019C21F7D00557F48 /* ExtraScrollViewMetricConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F119971C1700F95720 /* ExtraScrollViewMetricConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CA281119C21F7D00557F48 /* ExtraViewResizingByKeyboardPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3F819971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CA281219C21F7D00557F48 /* UIKitSanitizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4542F3D319971BB800F95720 /* UIKitSanitizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CA281319C21F7D00557F48 /* ExtraKeyboardPresentationNotificationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B73C5B199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CA281419C21F7D00557F48 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B73C5F199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CA281519C21F7D00557F48 /* ExtraKeyboardStickyPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 455604A81997D13300F3B588 /* ExtraKeyboardStickyPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CA281619C21F8500557F48 /* ExtraScrollViewMetricConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F219971C1700F95720 /* ExtraScrollViewMetricConverter.m */; };
+		45CA281719C21F8500557F48 /* UIKitSanitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3D519971BB800F95720 /* UIKitSanitizer.m */; };
+		45CA281819C21F8500557F48 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542F3F919971D0600F95720 /* ExtraViewResizingByKeyboardPresentationController.m */; };
+		45CA281919C21F8500557F48 /* ExtraScrollViewResizingByKeyboardPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4550FC671997359D00B11598 /* ExtraScrollViewResizingByKeyboardPresentationController.m */; };
+		45CA281A19C21F8500557F48 /* ExtraKeyboardStickyPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 455604A91997D13300F3B588 /* ExtraKeyboardStickyPane.m */; };
+		45CA281B19C21F8500557F48 /* ExtraKeyboardPresentationNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C5C199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m */; };
+		45CA281C19C21F8500557F48 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B73C60199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m */; };
+		45CA281E19C21FA500557F48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4542F37319971B5E00F95720 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		450B573719C2203D00B08BFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 458ED40919C21D830044BA55;
+			remoteInfo = "FoundationExtras - iOS - Dynamic Framework";
+		};
 		4542F3DF19971BB800F95720 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4542F36819971B5E00F95720 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4542F3CD19971BB800F95720;
 			remoteInfo = UIKitSanitizer;
+		};
+		458ED3F919C21D5E0044BA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45ACCC7219B37740001FB424;
+			remoteInfo = "FoundationExtras - OSX - Static Library";
+		};
+		458ED3FB19C21D5E0044BA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45ACCC7E19B37740001FB424;
+			remoteInfo = "FoundationExtras - OSX - Static Library - Tests";
+		};
+		458ED3FD19C21D5E0044BA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 451240CA195E9E0400B6198A;
+			remoteInfo = "FoundationExtras - OSX - Dynamic Framework";
+		};
+		458ED3FF19C21D5E0044BA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4512411B195E9F3400B6198A;
+			remoteInfo = "FoundationExtras - iOS - Static Library";
+		};
+		458ED40119C21D5E0044BA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 45E6B61C19AC79D70024A3DD;
+			remoteInfo = "Tests - FoundationExtras - iOS - Static Library";
+		};
+		458ED40319C21D5E0044BA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 450A2BC119C0BAE4009D55B5;
+			remoteInfo = "FoundationExtras - iOS - Static Framework";
+		};
+		458ED43919C21DF20044BA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 458ED40A19C21D830044BA55;
+			remoteInfo = "FoundationExtras - iOS - Dynamic Framework";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -68,10 +144,14 @@
 		455604A81997D13300F3B588 /* ExtraKeyboardStickyPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraKeyboardStickyPane.h; sourceTree = "<group>"; };
 		455604A91997D13300F3B588 /* ExtraKeyboardStickyPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraKeyboardStickyPane.m; sourceTree = "<group>"; };
 		458B15DF19C0BF9C005C2700 /* FoundationExtras.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FoundationExtras.framework; path = "../FoundationExtras/build/Debug-iphoneos/FoundationExtras.framework"; sourceTree = "<group>"; };
+		458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationExtras.xcodeproj; path = ../FoundationExtras/FoundationExtras.xcodeproj; sourceTree = "<group>"; };
 		45B73C5B199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraKeyboardPresentationNotificationController.h; sourceTree = "<group>"; };
 		45B73C5C199763D50080A6E3 /* ExtraKeyboardPresentationNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraKeyboardPresentationNotificationController.m; sourceTree = "<group>"; };
 		45B73C5F199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraScrollViewResizingByKeyboardPresentationControllerV2.h; sourceTree = "<group>"; };
 		45B73C60199769690080A6E3 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraScrollViewResizingByKeyboardPresentationControllerV2.m; sourceTree = "<group>"; };
+		45CA27F219C21F6000557F48 /* UIKitSanitizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitSanitizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45CA27F519C21F6000557F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45CA27F619C21F6000557F48 /* UIKitSanitizer - iOS - Dynamic Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitSanitizer - iOS - Dynamic Framework.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +159,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				458B15E019C0BF9C005C2700 /* FoundationExtras.framework in Frameworks */,
-				450A2BFC19C0BC7D009D55B5 /* libUIKitSanitizer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +166,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4542F3CF19971BB800F95720 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +177,15 @@
 				4542F3DC19971BB800F95720 /* XCTest.framework in Frameworks */,
 				4542F3DE19971BB800F95720 /* UIKit.framework in Frameworks */,
 				4542F3DD19971BB800F95720 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45CA27EE19C21F6000557F48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450B573619C2200900B08BFB /* FoundationExtras.framework in Frameworks */,
+				45CA281E19C21FA500557F48 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +228,12 @@
 		4542F36719971B5E00F95720 = {
 			isa = PBXGroup;
 			children = (
+				458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */,
 				4542F3D019971BB800F95720 /* UIKitSanitizer */,
 				4542F3E219971BB800F95720 /* UIKitSanitizerTests */,
 				450A2BE719C0BC68009D55B5 /* UIKitSanitizer - iOS - Static Framework */,
 				450A2BF119C0BC68009D55B5 /* UIKitSanitizer - iOS - Static FrameworkTests */,
+				45CA27F319C21F6000557F48 /* UIKitSanitizer - iOS - Dynamic Framework */,
 				4542F37219971B5E00F95720 /* Frameworks */,
 				4542F37119971B5E00F95720 /* Products */,
 			);
@@ -157,6 +245,7 @@
 				4542F3CE19971BB800F95720 /* libUIKitSanitizer.a */,
 				4542F3DB19971BB800F95720 /* UIKitSanitizerTests.xctest */,
 				450A2BE619C0BC68009D55B5 /* UIKitSanitizer.framework */,
+				45CA27F219C21F6000557F48 /* UIKitSanitizer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,6 +310,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		458ED3F119C21D5E0044BA55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				458ED3FA19C21D5E0044BA55 /* libFoundationExtras.a */,
+				458ED3FC19C21D5E0044BA55 /* FoundationExtras - OSX - Static Library - Tests.xctest */,
+				458ED3FE19C21D5E0044BA55 /* FoundationExtras.framework */,
+				458ED40019C21D5E0044BA55 /* libFoundationExtras.a */,
+				458ED40219C21D5E0044BA55 /* Tests - FoundationExtras - iOS - Static Library.xctest */,
+				458ED40419C21D5E0044BA55 /* FoundationExtras.framework */,
+				458ED43A19C21DF20044BA55 /* FoundationExtras.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45CA27F319C21F6000557F48 /* UIKitSanitizer - iOS - Dynamic Framework */ = {
+			isa = PBXGroup;
+			children = (
+				45CA27F619C21F6000557F48 /* UIKitSanitizer - iOS - Dynamic Framework.h */,
+				45CA27F419C21F6000557F48 /* Supporting Files */,
+			);
+			path = "UIKitSanitizer - iOS - Dynamic Framework";
+			sourceTree = "<group>";
+		};
+		45CA27F419C21F6000557F48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45CA27F519C21F6000557F48 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -235,6 +355,20 @@
 				45AF1CA019C0C55600151509 /* ExtraKeyboardPresentationNotificationController.h in Headers */,
 				45AF1CA319C0C55600151509 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.h in Headers */,
 				45AF1CA419C0C55600151509 /* ExtraKeyboardStickyPane.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45CA27EF19C21F6000557F48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45CA281419C21F7D00557F48 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.h in Headers */,
+				45CA281019C21F7D00557F48 /* ExtraScrollViewMetricConverter.h in Headers */,
+				45CA281219C21F7D00557F48 /* UIKitSanitizer.h in Headers */,
+				45CA281119C21F7D00557F48 /* ExtraViewResizingByKeyboardPresentationController.h in Headers */,
+				45CA281519C21F7D00557F48 /* ExtraKeyboardStickyPane.h in Headers */,
+				45CA280F19C21F7D00557F48 /* ExtraScrollViewResizingByKeyboardPresentationController.h in Headers */,
+				45CA281319C21F7D00557F48 /* ExtraKeyboardPresentationNotificationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +427,25 @@
 			productReference = 4542F3DB19971BB800F95720 /* UIKitSanitizerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		45CA27F119C21F6000557F48 /* UIKitSanitizer - iOS - Dynamic Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45CA280D19C21F6000557F48 /* Build configuration list for PBXNativeTarget "UIKitSanitizer - iOS - Dynamic Framework" */;
+			buildPhases = (
+				45CA27ED19C21F6000557F48 /* Sources */,
+				45CA27EE19C21F6000557F48 /* Frameworks */,
+				45CA27EF19C21F6000557F48 /* Headers */,
+				45CA27F019C21F6000557F48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				450B573819C2203D00B08BFB /* PBXTargetDependency */,
+			);
+			name = "UIKitSanitizer - iOS - Dynamic Framework";
+			productName = "UIKitSanitizer - iOS - Dynamic Framework";
+			productReference = 45CA27F219C21F6000557F48 /* UIKitSanitizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -303,6 +456,9 @@
 				ORGANIZATIONNAME = Eonil;
 				TargetAttributes = {
 					450A2BE519C0BC68009D55B5 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					45CA27F119C21F6000557F48 = {
 						CreatedOnToolsVersion = 6.0;
 					};
 				};
@@ -317,14 +473,73 @@
 			mainGroup = 4542F36719971B5E00F95720;
 			productRefGroup = 4542F37119971B5E00F95720 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 458ED3F119C21D5E0044BA55 /* Products */;
+					ProjectRef = 458ED3F019C21D5E0044BA55 /* FoundationExtras.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4542F3CD19971BB800F95720 /* UIKitSanitizer - iOS Static Library */,
 				4542F3DA19971BB800F95720 /* UIKitSanitizerTests */,
 				450A2BE519C0BC68009D55B5 /* UIKitSanitizer - iOS - Static Framework */,
+				45CA27F119C21F6000557F48 /* UIKitSanitizer - iOS - Dynamic Framework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		458ED3FA19C21D5E0044BA55 /* libFoundationExtras.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFoundationExtras.a;
+			remoteRef = 458ED3F919C21D5E0044BA55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		458ED3FC19C21D5E0044BA55 /* FoundationExtras - OSX - Static Library - Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FoundationExtras - OSX - Static Library - Tests.xctest";
+			remoteRef = 458ED3FB19C21D5E0044BA55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		458ED3FE19C21D5E0044BA55 /* FoundationExtras.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FoundationExtras.framework;
+			remoteRef = 458ED3FD19C21D5E0044BA55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		458ED40019C21D5E0044BA55 /* libFoundationExtras.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFoundationExtras.a;
+			remoteRef = 458ED3FF19C21D5E0044BA55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		458ED40219C21D5E0044BA55 /* Tests - FoundationExtras - iOS - Static Library.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Tests - FoundationExtras - iOS - Static Library.xctest";
+			remoteRef = 458ED40119C21D5E0044BA55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		458ED40419C21D5E0044BA55 /* FoundationExtras.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FoundationExtras.framework;
+			remoteRef = 458ED40319C21D5E0044BA55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		458ED43A19C21DF20044BA55 /* FoundationExtras.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FoundationExtras.framework;
+			remoteRef = 458ED43919C21DF20044BA55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		450A2BE419C0BC68009D55B5 /* Resources */ = {
@@ -342,6 +557,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45CA27F019C21F6000557F48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -349,6 +571,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458ED43C19C21E0D0044BA55 /* ExtraScrollViewMetricConverter.m in Sources */,
+				458ED43E19C21E0D0044BA55 /* UIKitSanitizer.m in Sources */,
+				458ED44019C21E0D0044BA55 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */,
+				458ED43D19C21E0D0044BA55 /* ExtraScrollViewResizingByKeyboardPresentationController.m in Sources */,
+				458ED44119C21E0D0044BA55 /* ExtraKeyboardStickyPane.m in Sources */,
+				458ED44219C21E0D0044BA55 /* ExtraKeyboardPresentationNotificationController.m in Sources */,
+				458ED43F19C21E0D0044BA55 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +603,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45CA27ED19C21F6000557F48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45CA281A19C21F8500557F48 /* ExtraKeyboardStickyPane.m in Sources */,
+				45CA281719C21F8500557F48 /* UIKitSanitizer.m in Sources */,
+				45CA281C19C21F8500557F48 /* ExtraScrollViewResizingByKeyboardPresentationControllerV2.m in Sources */,
+				45CA281B19C21F8500557F48 /* ExtraKeyboardPresentationNotificationController.m in Sources */,
+				45CA281919C21F8500557F48 /* ExtraScrollViewResizingByKeyboardPresentationController.m in Sources */,
+				45CA281819C21F8500557F48 /* ExtraViewResizingByKeyboardPresentationController.m in Sources */,
+				45CA281619C21F8500557F48 /* ExtraScrollViewMetricConverter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		450B573819C2203D00B08BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FoundationExtras - iOS - Dynamic Framework";
+			targetProxy = 450B573719C2203D00B08BFB /* PBXContainerItemProxy */;
+		};
 		4542F3E019971BB800F95720 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4542F3CD19971BB800F95720 /* UIKitSanitizer - iOS Static Library */;
@@ -414,6 +662,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,6 +685,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -596,6 +846,54 @@
 			};
 			name = Release;
 		};
+		45CA280219C21F6000557F48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UIKitSanitizer - iOS - Dynamic Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45CA280319C21F6000557F48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "UIKitSanitizer - iOS - Dynamic Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,6 +929,15 @@
 			buildConfigurations = (
 				4542F3EE19971BB800F95720 /* Debug */,
 				4542F3EF19971BB800F95720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45CA280D19C21F6000557F48 /* Build configuration list for PBXNativeTarget "UIKitSanitizer - iOS - Dynamic Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45CA280219C21F6000557F48 /* Debug */,
+				45CA280319C21F6000557F48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

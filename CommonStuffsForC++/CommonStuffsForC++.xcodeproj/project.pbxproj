@@ -48,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4503CDDB19C21F22009BC726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4503CDDC19C21F22009BC726 /* UIKitSanitizer - iOS - Dynamic Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKitSanitizer - iOS - Dynamic Framework.h"; sourceTree = "<group>"; };
+		4503CDE519C21F22009BC726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4503CDE619C21F22009BC726 /* UIKitSanitizer___iOS___Dynamic_FrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIKitSanitizer___iOS___Dynamic_FrameworkTests.m"; sourceTree = "<group>"; };
 		4512421D195EDD8F00B6198A /* CommonStuffsForC++.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "CommonStuffsForC++.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45124220195EDD8F00B6198A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		45124223195EDD8F00B6198A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +118,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4503CDD919C21F22009BC726 /* UIKitSanitizer - iOS - Dynamic Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4503CDDC19C21F22009BC726 /* UIKitSanitizer - iOS - Dynamic Framework.h */,
+				4503CDDA19C21F22009BC726 /* Supporting Files */,
+			);
+			path = "UIKitSanitizer - iOS - Dynamic Framework";
+			sourceTree = "<group>";
+		};
+		4503CDDA19C21F22009BC726 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4503CDDB19C21F22009BC726 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4503CDE319C21F22009BC726 /* UIKitSanitizer - iOS - Dynamic FrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4503CDE619C21F22009BC726 /* UIKitSanitizer___iOS___Dynamic_FrameworkTests.m */,
+				4503CDE419C21F22009BC726 /* Supporting Files */,
+			);
+			path = "UIKitSanitizer - iOS - Dynamic FrameworkTests";
+			sourceTree = "<group>";
+		};
+		4503CDE419C21F22009BC726 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4503CDE519C21F22009BC726 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		45124213195EDD8F00B6198A = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +160,8 @@
 				4512423B195EDD8F00B6198A /* CommonStuffsForC++Tests */,
 				4542F3A919971B8900F95720 /* UIKitSanitizer */,
 				4542F3BC19971B8900F95720 /* UIKitSanitizerTests */,
+				4503CDD919C21F22009BC726 /* UIKitSanitizer - iOS - Dynamic Framework */,
+				4503CDE319C21F22009BC726 /* UIKitSanitizer - iOS - Dynamic FrameworkTests */,
 				4512421F195EDD8F00B6198A /* Frameworks */,
 				4512421E195EDD8F00B6198A /* Products */,
 			);
