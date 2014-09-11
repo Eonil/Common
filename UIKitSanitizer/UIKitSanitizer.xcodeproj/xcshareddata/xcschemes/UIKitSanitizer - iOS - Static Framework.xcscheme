@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45ACCC7119B37740001FB424"
-               BuildableName = "libFoundationExtras.a"
-               BlueprintName = "FoundationExtras - OSX - Static Library"
-               ReferencedContainer = "container:FoundationExtras.xcodeproj">
+               BlueprintIdentifier = "450A2BE519C0BC68009D55B5"
+               BuildableName = "UIKitSanitizer.framework"
+               BlueprintName = "UIKitSanitizer - iOS - Static Framework"
+               ReferencedContainer = "container:UIKitSanitizer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,10 +42,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45ACCC7119B37740001FB424"
-            BuildableName = "libFoundationExtras.a"
-            BlueprintName = "FoundationExtras - OSX - Static Library"
-            ReferencedContainer = "container:FoundationExtras.xcodeproj">
+            BlueprintIdentifier = "450A2BE519C0BC68009D55B5"
+            BuildableName = "UIKitSanitizer.framework"
+            BlueprintName = "UIKitSanitizer - iOS - Static Framework"
+            ReferencedContainer = "container:UIKitSanitizer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,6 +57,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "450A2BE519C0BC68009D55B5"
+            BuildableName = "UIKitSanitizer.framework"
+            BlueprintName = "UIKitSanitizer - iOS - Static Framework"
+            ReferencedContainer = "container:UIKitSanitizer.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45ACCC7119B37740001FB424"
-               BuildableName = "libFoundationExtras.a"
-               BlueprintName = "FoundationExtras - OSX - Static Library"
+               BlueprintIdentifier = "450A2BC019C0BAE4009D55B5"
+               BuildableName = "FoundationExtras.framework"
+               BlueprintName = "FoundationExtras - iOS - Static Framework"
                ReferencedContainer = "container:FoundationExtras.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45ACCC7119B37740001FB424"
-            BuildableName = "libFoundationExtras.a"
-            BlueprintName = "FoundationExtras - OSX - Static Library"
+            BlueprintIdentifier = "450A2BC019C0BAE4009D55B5"
+            BuildableName = "FoundationExtras.framework"
+            BlueprintName = "FoundationExtras - iOS - Static Framework"
             ReferencedContainer = "container:FoundationExtras.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,6 +57,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "450A2BC019C0BAE4009D55B5"
+            BuildableName = "FoundationExtras.framework"
+            BlueprintName = "FoundationExtras - iOS - Static Framework"
+            ReferencedContainer = "container:FoundationExtras.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
