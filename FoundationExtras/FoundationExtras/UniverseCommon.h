@@ -63,7 +63,7 @@ extern "C"
 
 #if		EONIL_DEBUG_MODE
 void	_universe_error_log(NSString* message);
-void	UNIVERSE_DEBUG_ASSERT(BOOL cond);
+void	UNIVERSE_DEBUG_ASSERT(BOOL cond);					
 void	UNIVERSE_DEBUG_ASSERT_WITH_MESSAGE(BOOL cond, NSString* message);
 #define	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE(obj,type)			UNIVERSE_DEBUG_ASSERT([obj isKindOfClass:[type class]])
 #define	UNIVERSE_DEBUG_ASSERT_OBJECT_TYPE_OR_NIL(obj,type)	UNIVERSE_DEBUG_ASSERT([obj isKindOfClass:[type class]] || obj == nil)
